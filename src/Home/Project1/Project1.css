@@ -1,0 +1,134 @@
+.zeroOnee{
+    font-family: 'Anton', sans-serif;
+}
+
+.new1{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.content{
+    font-family: 'Mr De Haviland', cursive;
+    /* font-family: 'Monsieur La Doulaise', cursive; */
+}
+
+.lumie{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.lumi{
+    transform: translate(0, -25vw);
+}
+
+.lumiee{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.lumii{
+    transform: translate(0, -20vw);
+}
+
+.lum1{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.cou11{
+    transform: translate(0, 15vw);
+    line-height: 10vw;
+}
+
+.couu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cou1{
+    transform: translate(0, 10vw);
+}
+
+.cou{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.couture{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.couture1{
+    margin-left: 3vw;
+}
+
+.fh{
+    /* font-family: 'Monsieur La Doulaise', cursive; */
+    font-family: 'Mr De Haviland', cursive;
+}
+
+.faH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.fah{
+    transform: translate(0, 15vw);
+}
+
+.faHH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.fahh{
+    transform: translate(0, 10vw);
+}
+
+.lumProjectt{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+}
+
+.lcBody{
+    font-family: 'Poppins', sans-serif; 
+}
+
+.caseStudy{
+    font-family: 'Anton', sans-serif;
+}
+
+.aUx{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.aUx1{
+    transform: translate(0, 15vw);
+}
+
+.lumDesH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.lumDes{
+    transform: translate(0, 10vw);
+}
+
+
+.l{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.learnMore{
+   font-family: 'Sarabun', sans-serif;
+}
+
+.lm{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.lm1{
+    transform: translate(0, 6vw);
+}
+
+.lum3{
+    font-family: 'Bodoni Moda', serif; 
+    font-weight: 300;
+}
+
+.ui{
+    font-family: 'Bebas Neue', sans-serif;
+}
+

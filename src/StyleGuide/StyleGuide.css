@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.stylGuid{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.styll{
+    font-family: 'Anton', sans-serif;
+}
+
+.styleNote{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.color{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.typography{
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+.typeList{
+    font-family: 'Bebas Neue', sans-serif;
+}

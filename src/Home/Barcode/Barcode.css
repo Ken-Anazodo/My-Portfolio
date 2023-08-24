@@ -1,0 +1,15 @@
+.barcode{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 700;
+}
+
+.bar{
+    margin-right: 0.5vw;
+}
+
+.year{
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}

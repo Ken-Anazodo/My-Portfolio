@@ -1,0 +1,719 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+iframe{
+    border: none;
+}
+.numbr{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+}
+
+.yr{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+}
+
+.mont, .yr1{
+    margin-right: 1vw;
+}
+
+.ll{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.cc{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.ux{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+}
+
+.cStudy{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400
+    
+}
+
+.ffhh{
+    font-family: 'Libre Bodoni', serif; 
+    font-weight: 400;
+}
+
+.exec{
+    font-family: 'Anton', sans-serif;
+}
+
+.uid{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.uid{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.llum, .uxx{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.ccou, .uii{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.css{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+
+.tools, .clte, .role{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.toolsAns, .clteAns, .roleAns{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+}
+
+.ttt{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.clann{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    margin-right: 0.8vw;
+}
+
+
+.twentyThree{
+    font-family: 'Anton', sans-serif;
+}
+
+.project{
+    font-family: 'Bebas Neue', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.pro{
+    margin-right: 3.2vw;
+    transform: translate(0, -6vw);
+}
+
+.elegance{
+    /* font-family: 'Mr De Haviland', cursive; */
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+}
+
+
+.app1{
+    /* font-family: 'Plaster', cursive; */
+    font-family: 'Anton', sans-serif;
+}
+
+.shortIntro{
+    font-family: 'Poppins', sans-serif; 
+}
+
+.aWeb, .forr{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.over{
+    font-family: 'Anton', sans-serif;
+}
+
+.ovr{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.overview{
+    font-family: 'Bodoni Moda', serif;
+    transform: translate(0, -10vw); 
+}
+
+.overview-body{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.aboutLum{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.bgPicSec4{
+    background: url(./img/img2.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    opacity: 20px;
+}
+
+.theGoal{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.goalss{
+    font-family: 'Bodoni Moda', serif;
+    transform: translate(0, -10vw);  
+}
+
+.aim{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.list{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.sec5{
+    background: url(./img/img10.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    opacity: 20px;
+}
+
+.problem1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.the1{
+    font-family: 'Anton', sans-serif;
+    color: rgb(82 82 82);
+}
+
+.theProb{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.probs{
+    font-family: 'Bodoni Moda', serif; 
+    transform: translate(0, -10vw);  
+}
+
+.headingg{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    color: rgb(161 98 7);
+}
+
+
+.sec6{
+    background: url(./img/img15.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    opacity: 20px;
+}
+
+.the{
+    font-family: 'Bodoni Moda', serif; 
+}
+
+.solution{
+    font-family: 'Bodoni Moda', serif; 
+    font-weight: 900;
+}
+
+.theSol{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.solution1{
+    font-family: 'Bodoni Moda', serif; 
+    transform: translate(0, -10vw); 
+}
+
+.solBody{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.design{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.designProcess{
+    font-family: 'Bodoni Moda', serif;
+    transform: translate(0, 10vw);  
+}
+
+.desProcess{
+    font-family: 'Poppins', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.desig{
+    transform: translate(0, 30vw); 
+}
+
+.designNote{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.sec8{
+    background: url(./img/img12.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+}
+
+.empathize{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.empath{
+    font-family: 'Anton', sans-serif;
+    transform: translate(0, 25vw);
+}
+
+.phase{
+    font-family: 'Bodoni Moda', serif; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.empp{
+    transform: translate(-45vw, 0);
+}
+
+.phase1{
+    margin-right: 7vw;
+}
+
+.discc{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.discover{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 200;
+    transform: translate(0, 15vw);
+}
+
+.problem2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.assum{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.assumption{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    transform: translate(0, 10vw);
+}
+
+.ass1 li{
+    margin-bottom: 1vw;
+}
+
+.surv{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.survey{
+    font-family: 'Bebas Neue', sans-serif;
+    transform: translate(0, 10vw);
+}
+
+.survey1 li{
+    margin-bottom: 1vw;
+}
+
+.define{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    transform: translate(0, 30vw);
+    line-height: 18.5vw;
+}
+
+.deefn{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.definePhase{
+    font-family: 'Bebas Neue', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.ddef{
+    transform: translate(-40vw, 0);
+}
+
+.lumiereUsers{
+    /* font-family: 'Bodoni Moda', serif; */
+    font-family: 'Anton', sans-serif;
+}
+
+.lumm{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.users{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.zeroOne{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.persona, .desc, .goals, .frustration{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.personaNote{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.tag{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 700;
+    font-style: italic;
+    /* font-size: 2.7vw; */
+}
+
+.title{
+    font-family: 'Bodoni Moda', serif;
+    /* font-size: 1vw; */
+    margin-right: 1vw;
+}
+
+.ans{
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-size: 1.9vw; */
+    color: rgb(253 224 71);
+}
+
+.linee{
+    background-color: rgb(120 113 108);
+}
+
+.aboutPersona{
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.3vw; */
+}
+
+.desc, .sarah, .olivia{
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+
+.sarah1, .olivia1{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2vw;
+}
+
+.sarah, .olivia{
+    padding-left: 1vw;
+    color: rgb(253 224 71);
+}
+
+.num{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.emapping{
+    font-family: 'Bebas Neue', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.em{
+    transform: translate(0, 30vw); 
+}
+
+.empMapNote{
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+.space{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.action{
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-size: 5vw; */
+    color: rgb(253 224 71);
+}
+
+.pr{
+    font-family: 'Bodoni Moda', serif; 
+    margin-right: 4vw;
+}
+
+.prr{
+    font-family: 'Anton', sans-serif;
+}
+
+.promNote{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+}
+
+.prnote1{
+    font-weight: 700;
+}
+
+.ideateHead{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.ideate{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    transform: translate(0, 30vw); 
+}
+
+.ideatePhase{
+    font-family: 'Bebas Neue', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.idphase{
+    transform: translate(-60vw, 0);
+}
+
+.infoArch{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.archP{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.arch{
+    font-family: 'Bodoni Moda', serif;
+    transform: translate(0, -20vw);
+}
+
+.infoArchNote{
+    font-family: 'Poppins', sans-serif;
+}
+
+.userflowHead{
+    font-family: 'Bodoni Moda', serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.userflow{
+    font-family: 'Bodoni Moda', serif;
+    transform: translate(0, -25vw);
+    line-height: 4.2vw;
+}
+
+.userflowNote{
+    font-family: 'Poppins', sans-serif;
+}
+
+.vis, .des{
+    font-family: 'Anton', sans-serif;
+}
+
+.desi{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.andd{
+    font-family: 'Mr De Haviland', cursive;
+}
+
+.protoo{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.styl, .guid{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.protoH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.prototype{
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    transform: translate(0, 20vw);
+}
+
+.prototypePhase{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.protoPhase{
+    transform: translate(-50vw, 0);
+}
+
+.prototypePhase, .papr{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.wireH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.papWire{
+    transform: translate(0, -20vw);
+}
+
+.wirefram{
+    font-family: 'Bodoni Moda', serif;
+    margin-right: 3vw;
+}
+
+.pWireframeNote, .dWireframeNote{
+    font-family: 'Poppins', sans-serif;
+}
+
+.viewSketch{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.digit, .view{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.digiWireH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.digiWire{
+    transform: translate(0, -20vw);
+}
+
+.batchChief{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.batchChief1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.highFidelity{
+    font-family: 'Anton', sans-serif;
+}
+
+.highFidel{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.highFid{
+    transform: translate(0, 20vw);
+}
+
+.highDes{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.desi{
+    transform: translate(0, -20vw);
+}
+
+
+
+.desktop{
+    margin-right: 1.5vw;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.home, .cart, .concept, .lab, .catalog, .cont{
+    margin-right: 2vw;
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(202 138 4);
+}
+
+.cart1{
+    margin-right: 1vw;
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(202 138 4);
+}
+
+.mobile{
+    margin-right: 3.5vw;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.mobScreen{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.mobScreen1{
+    transform: translate(0, 25vw);
+}
+
+
+.proto{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.typH{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.typHead{
+    transform: translate(0, 20vw);
+}
+
+.sophi{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.modern{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.reflect{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.rflct{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.rflct1{
+    transform: translate(0, 20vw);
+}
+
+.conc{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.conc1{
+    transform: translate(0, 20vw);
+}
+
+.reflectNote{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.thanks{
+    font-family: 'Mr De Haviland', cursive;
+}
+
+
+.share{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+
+

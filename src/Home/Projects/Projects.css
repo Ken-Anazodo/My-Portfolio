@@ -1,0 +1,16 @@
+.projects{
+    font-family: 'Black Ops One', cursive;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.work{
+    transform: translate(0, 30vw);
+}
+
+/* .work.active{
+    color: rgb(127 29 29);
+} */
+
+/* .workBg.active{
+    background-color:  rgb(231 229 228);
+} */
