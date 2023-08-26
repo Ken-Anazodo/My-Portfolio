@@ -161,7 +161,7 @@ const IntroContinue = () => {
 
 
 					<div className='h-full w-full flex justify-center md:justify-start absolute top-0 left-0'>
-						<div className='flex justify-center md:justify-start text-zinc-950  mt-[7vw] md:mt-[4vw] lg:mt-[2vw] z-20 md:ml-[10vw]'>
+						<div className='flex justify-center md:justify-start text-zinc-950 lg:text-zinc-900  mt-[7vw] md:mt-[4vw] lg:mt-[2vw] z-20 md:ml-[10vw]'>
 							<div>
 								<div className='text-center flex justify-center items-center md:flex-col md:justify-start md:items-start lg:flex-row lg:items-center'>
 									<div className='lett'>
