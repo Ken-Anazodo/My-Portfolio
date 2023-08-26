@@ -2057,69 +2057,76 @@ const FullProject1 = () => {
 
                                         {/* about Persona Small Screen */}
                                         <div>
-                                            <div className='aboutPersona text-justify text-[4vw] lg:[display:none]'>
+                                            <div className='aboutPersona text-justif text-[4vw] lg:[display:none]'>
                                                 
-                                                Joules is a fashion blogger who enjoys writing 
+                                                Joules is a fashion blogger who enjoys 
 
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-                                                
-                                                about the latest fashion trends and show-  
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                casing her personal style. she shops online 
-                                                
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                frequently and is always on the lookout for
+                                                writing about the latest fashion trends and   
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                unique and stylish clothing that can help her 
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                stand out on social media. She values a web- 
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                site that offers a wide range of fashion items 
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                and is easy to navigate. She also appreciates  
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                a website that offers a wide range of outfits 
+                                                showcasing her personal style. she shops 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                where all her needs can be met. A website 
+                                                online frequently and is always on the lookout
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                that has a strong social media presence.
+                                                for unique and stylish clothing that can help  
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+
+                                                her stand out on social media. She values a 
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+
+                                                website that offers a wide range of fashion  
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+
+                                                items and is easy to navigate. She also   
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+
+                                                appreciates a website that offers a wide 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                range of outfits where all her needs can be 
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+
+                                                met. A website that has a strong social
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                
+                                                media presence.
                                             </div>
                                         </div>
 
@@ -2128,11 +2135,11 @@ const FullProject1 = () => {
                                         </div>
 
 
-                                                {/* SARAH GOALS AND FRUSTERATION */}
+                                                {/* Joules GOALS AND FRUSTERATION */}
                                         <div>
                                             <div className='lg:flex'>
                                                 <div className='w-full lg:w-[29vw]'>
-                                                    <h1 className='sarah goals text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
+                                                    <h1 className='sarah goals text-[6vw] lg:text-[1.2vw]  mt-[4vw] lg:mt-[1vw]'>GOALS</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2176,7 +2183,7 @@ const FullProject1 = () => {
                                                 </div>
 
                                                 <div className='frusContainer w-full lg:w-[29vw] lg:border-l-[0.2vw] lg:border-stone-500'>
-                                                    <h1 className='sarah frustration text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
+                                                    <h1 className='sarah frustration text-[6vw] lg:text-[1.2vw]  mt-[4vw] lg:mt-[1vw]'>FRUSTRATION</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2374,7 +2381,7 @@ const FullProject1 = () => {
 
                                         {/* about Persona small screen */}
                                         <div>
-                                            <div className='aboutPersona text-justify text-[4vw] lg:[display:none]'>
+                                            <div className='aboutPersona text-justif text-[4vw] lg:[display:none]'>
                                                 Olivia is a high-income earner who values
 
                                                 <div className='flex justify-center'>
@@ -2387,43 +2394,50 @@ const FullProject1 = () => {
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                keeping up with the latest fashion trends. She 
+                                                keeping up with the latest fashion trends. 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                is a busy professional and often online due to 
+                                                she is a busy professional and often online 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                her busy schedule. She enjoys designer labels 
+                                                due to her busy schedule. She enjoys
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                and has a preference for  high-quality mate-
+                                                designer labels and has a preference for 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                rials  and craftsmanship. She also appreciates 
+                                                high-quality materials  and craftsmanship.  
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                personalized customer service and shopping 
+                                                She also appreciates personalized customer 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                experiences that make  her feel special.                                              
+                                                service and shopping experiences that 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                
+                                                make her feel special.                                              
                                             </div>
                                         </div>
 
@@ -2438,7 +2452,7 @@ const FullProject1 = () => {
                                         <div>
                                             <div className='lg:flex'>
                                                 <div className='w-full lg:w-[29vw]'>
-                                                    <h1 className='olivia goals text-[6vw] lg:text-[1.2vw] mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
+                                                    <h1 className='olivia goals text-[6vw] lg:text-[1.2vw] mt-[4vw] lg:mt-[1vw]'>GOALS</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2487,7 +2501,7 @@ const FullProject1 = () => {
 
                                                 {/* Frustration */}
                                                 <div className='frusContainer w-full lg:w-[29vw] lg:border-l-[0.2vw] lg:border-stone-500'>
-                                                    <h1 className='olivia frustration text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
+                                                    <h1 className='olivia frustration text-[6vw] lg:text-[1.2vw]  mt-[4vw] lg:mt-[1vw]'>FRUSTRATION</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2508,19 +2522,19 @@ const FullProject1 = () => {
                                                         <ul className='olivia1 list-disc text-[4vw] lg:[display:none]'>
                                                             {/* <li>Get expert fashion advice and styling tips from a contact online when making selection.</li> */}
                                                             <li>
-                                                                She's extremely busy and can't find the time 
+                                                                She's extremely busy and can't find the 
                                                                 
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                                 </div>
 
-                                                                to go out shopping at her favourite brand 
+                                                                time to go out shopping at her favourite 
 
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                                 </div>
 
-                                                                and store.
+                                                                brand and store.
                                                             
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
