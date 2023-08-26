@@ -2714,7 +2714,7 @@ const FullProject1 = () => {
                                     <div className='space space1 lg:flex lg:h-[30vw] lg:border-stone-500 lg:border-[0.3vw]'>
                                         <div className=' lg:w-[35vw] p-[6vw] lg:p-[3vw] border-stone-500 border-[0.3vw] lg:border-0 lg:border-r-[0.3vw]'>
                                             <div className='action feel lg:[display:none] pt-[3vw] text-[10vw]'>FEELS</div>
-                                            <ul  className=' list-disc lg:pt-[3vw] h-[13vw] mb-[8vw] lg:mb-[0vw]'>
+                                            <ul  className=' list-disc lg:pt-[3vw] lg:h-[13vw] mb-[8vw] lg:mb-[0vw]'>
                                                 <li>Excitement about finding a unique dress online.</li>
                                                 <li>Frustrated with the thought of going out shopping as she has little or no time.</li>
                                             </ul>
