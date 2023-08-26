@@ -377,7 +377,7 @@ export default function Section1() {
             <div className='aboutChildSec appFont font-light md:font-bold text-stone-400 mt-[3.3vw]'>
                <h1 className='about font-extrabold xl:text-[1.4vw]'>ABOUT</h1> 
                <p>
-                 I am a developer based in Lagos, Nigeria with a degree in Computer Technology. 
+                 I am a developer based in Lagos, Nigeria with a degree in Computer Technology, 
                 focused on creating interactive digital experiences 
                 on the web. I design, develop and deliver web applications that drives result.
                 </p>
