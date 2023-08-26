@@ -2077,56 +2077,56 @@ const FullProject1 = () => {
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                online frequently and is always on the lookout
+                                                online frequently and is always on the 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                for unique and stylish clothing that can help  
+                                                lookout for unique and stylish clothing that   
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                her stand out on social media. She values a 
+                                                can help her stand out on social media. She 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                website that offers a wide range of fashion  
+                                                values a website that offers a wide range of   
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                items and is easy to navigate. She also   
+                                                fashion items and is easy to navigate. She    
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                appreciates a website that offers a wide 
+                                                also appreciates a website that offers a 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                range of outfits where all her needs can be 
+                                                wide range of outfits where all her needs 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                met. A website that has a strong social
+                                                can be met. A website that has a strong 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
                                                 
-                                                media presence.
+                                                social media presence.
                                             </div>
                                         </div>
 
