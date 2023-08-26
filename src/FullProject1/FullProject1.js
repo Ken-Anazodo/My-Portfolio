@@ -84,11 +84,13 @@ const FullProject1 = () => {
     const projectDate = useRef(null);
     const lumC = useRef(null);
     const caseStudy = useRef(null);
+    const caseStudy1 = useRef(null);
     const tools = useRef(null);
     const duration = useRef(null);
     const role = useRef(null);
     const role1 = useRef(null);
     const ux = useRef(null);
+    const ux1 = useRef(null);
     const overviewSec = useRef(null);
     const fashHouse = useRef(null);
     const ecom = useRef(null);
@@ -124,13 +126,17 @@ const FullProject1 = () => {
     const elmyNo = myNo.current;
     const ellumC = lumC.current;
     const elcaseStudy = caseStudy.current;
+    const elcaseStudy1 = caseStudy1.current;
     const elcaseStudyChild1 = elcaseStudy.children[0];
     const elcaseStudyChild2 = elcaseStudyChild1.nextSibling;
+    const elcaseStudyChild11 = elcaseStudy1.children[0];
+    const elcaseStudyChild22 = elcaseStudyChild11.nextSibling;
     const eltools = tools.current;
     const elduration = duration.current;
     const elrole = role.current;
     const elrole1 = role1.current;
     const elux = ux.current;
+    const elux1 = ux1.current;
     const elfashHouse = fashHouse.current;
     const elecom = ecom.current;
 
@@ -199,9 +205,13 @@ const FullProject1 = () => {
       let tl000 = gsap.timeline()
 
       tl000.fromTo(elux, {opacity:0, x: '40vw'}, {opacity:1, x: 0, duration: 0.5, ease: "power4", transition: 1}, "8")
+      .fromTo(elux1, {opacity:0, x: '-60vw'}, {opacity:1, x: 0, duration: 0.5, ease: "power4", transition: 1}, "8")
       .fromTo(elcaseStudyChild2, {opacity:0, y: '-100vw'}, {opacity:1, y: 0, duration: 1, ease: "power4", transition: 1}, "7.9")
       .fromTo(elcaseStudyChild1, {opacity:0, y: '-100vw'}, {opacity:1, y: 0, duration: 1, ease: "power4", transition: 1}, "8.3")
-      .fromTo('.exec', {opacity:0, y: '-100vw'}, {opacity:1, y: 0, duration: 1, ease: "power4", transition: 1}, "8.9")
+      .fromTo(elcaseStudyChild22, {opacity:0, x: '100vw'}, {opacity:1, x: 0, duration: 1, ease: "power4", transition: 1}, "7.9")
+      .fromTo(elcaseStudyChild11, {opacity:0, x: '100vw'}, {opacity:1, x: 0, duration: 1, ease: "power4", transition: 1}, "8.3")
+      .fromTo('.exec1', {opacity:0, y: '-100vw'}, {opacity:1, y: 0, duration: 1, ease: "power4", transition: 1}, "8.9")
+      .fromTo('.exec2', {opacity:0, x: '50vw'}, {opacity:1, x: 0, duration: 1, ease: "power4", transition: 1}, "8.9")
       .fromTo(elprojectDate, {opacity:0, y: '20vw'}, {opacity:1, y: 0, duration: 0.7, ease: "power4"}, "10.9")
       .fromTo(ellumC, {opacity:0, y: '20vw'}, {opacity:1, y: 0, duration: 0.7, ease: "power4"}, "10.9")
       .fromTo(eltools, {opacity:0, y: '6vw'}, {opacity:1, y: 0, duration: 0.7, ease: "power4"}, "10.9")
@@ -1107,8 +1117,8 @@ const FullProject1 = () => {
                     </div>
                 </div>
 
-
-                <div className='absolute h-full w-full top-0 bottom-0 left-0 right-0 flex items-center md:items-end'>
+                                {/* Large Screen */}
+                <div className='absolute h-full w-full top-0 bottom-0 left-0 right-0 flex items-center md:items-end [display:none] lg:[display:flex]'>
                     <div className=' flex items-center mt-[65vw] md:mt-0 md:mb-[35vw] lg:mb-[-7vw]'>
                         <div className='flex ux text-[30vw] text-yellow-100 mr-[1vw]' ref={ux}>
                             <div>U</div>
@@ -1117,7 +1127,25 @@ const FullProject1 = () => {
 
                         <div className='mb-[2.5vw]'>
                             <div className='cStudy text-[13vw] text-yellow-100' ref={caseStudy}>
-                                <div className='h-[11.2vw] lg:h-[11vw]'>CASE</div>
+                                <div className='h-[11vw]'>CASE</div>
+                                <div>STUDY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                                {/* Small Screen */}
+                <div className='absolute h-full w-full top-0 bottom-0 left-0 right-0 flex items-center md:items-end lg:[display:none]'>
+                    <div className=' flex items-center mt-[65vw] md:mt-0 md:mb-[35vw]'>
+                        <div className='flex ux text-[30vw] text-yellow-100 mr-[1vw]' ref={ux1}>
+                            <div>U</div>
+                            <div>X</div>
+                        </div>
+
+                        <div className='mb-[2.5vw]'>
+                            <div className='cStudy text-[13vw] text-yellow-100' ref={caseStudy1}>
+                                <div className='h-[11.2vw]'>CASE</div>
                                 <div>STUDY</div>
                             </div>
                         </div>
@@ -1127,17 +1155,31 @@ const FullProject1 = () => {
 
 
 
-
-            <div className='absolute h-full w-full top-0 left-0 flex items-center lg:justify-center md:items-end'>
-                <div className='flex text-[2.4vw] lg:text-[2.3vw] ml-[78.5vw] lg:ml-[65.4vw] mt-[55vw] md:mb-[58.5vw] lg:mb-[16.3vw] text-yellow-300 text-yellow-700 z-20'>
+                    {/* Large Screen */}
+            <div className='absolute h-full w-full top-0 left-0 flex items-center lg:justify-center md:items-end [display:none] lg:[display:flex]'>
+                <div className='flex text-[2.3vw] ml-[65.4vw] mt-[55vw] md:mb-[58.5vw] lg:mb-[16.3vw] text-yellow-300 text-yellow-700 z-20'>
                     <div>
-                        <div className='exec'>
+                        <div className='exec exec1'>
                             <div className='text-start h-[3vw] lg:h-[2.5vw]'>ALL</div>
                             <div className='text-start'>EXCLUSIVE</div>
                         </div>
                     </div>  
                 </div> 
             </div>
+
+
+                {/* Small Screen */}
+            <div className='absolute h-full w-full top-0 left-0 flex items-center lg:justify-center md:items-end lg:[display:none]'>
+                <div className='flex text-[2.4vw] ml-[78.5vw] mt-[55vw] md:mb-[58.5vw] text-yellow-300 text-yellow-700 z-20'>
+                    <div>
+                        <div className='exec exec2'>
+                            <div className='text-start h-[3vw] lg:h-[2.5vw]'>ALL</div>
+                            <div className='text-start'>EXCLUSIVE</div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+
 
 
             <div className='absolute h-full w-full top-0 left-0 flex items-center md:items-end'>
@@ -1287,14 +1329,14 @@ const FullProject1 = () => {
                                         </div>  
                                           <div className='w-full h-full absolute z-30 bg-black' ref={modelReveal}>
                                             <div className='w-full h-full flex justify-center items-center'>
-                                                <div className='elegance text-yellow-200 text-[2vw] lowercase'>
-                                                    <div className='ele mb-[2.4vw]'>O</div>
-                                                    <div className='ele mb-[2.4vw]'>V</div>
-                                                    <div className='ele mb-[2.4vw]'>E</div>
-                                                    <div className='ele mb-[3.4vw]'>R</div>
-                                                    <div className='ele mb-[2.4vw]'>V</div>
-                                                    <div className='ele mb-[2.4vw]'>I</div>
-                                                    <div className='ele mb-[2.4vw]'>E</div>
+                                                <div className='elegance text-yellow-200 text-[3.2vw] lg:text-[2vw] lowercase'>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>O</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>V</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>E</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[3.4vw]'>R</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>V</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>I</div>
+                                                    <div className='ele mb-[9.7vw] lg:mb-[2.4vw]'>E</div>
                                                     <div className='ele'>W</div>
                                                 </div>
                                             </div>
@@ -1365,7 +1407,7 @@ const FullProject1 = () => {
                     <div className='flex flex-col items-end pr-[2vw] lg:pr-0'>
 
                         <div className='lg:ml-[-2vw] mt-[12vw]'>
-                            <div className='relative w-[100vw] lg:w-[50vw] h-[40vh] md:h-[60vh] lg:h-[58.5vw]'>
+                            <div className='relative w-[100vw] lg:w-[50vw] h-[43vh] md:h-[60vh] lg:h-[58.5vw]'>
                                 <div className='h-full w-full'>
                                     <div className='absolute h-full w-full'>
                                         <img className='pic h-full w-full object-cover' src= {img8} alt= "mockup"></img>
@@ -1405,8 +1447,8 @@ const FullProject1 = () => {
                                 </div>
                             
                             <div>
-                                <span className='flex justify-center lg:justify-start mt-[2vw] lg:mt-[1.5vw] lg:tracking-widest text-stone-400 text-justify'>
-                                        <p className='shortIntro text-[3.5vw] lg:text-[1.5vw] lg:w-[50vw]'>
+                                <span className='flex justify-center lg:justify-start mt-[2vw] lg:mt-[1.5vw] tracking-tighter lg:tracking-widest text-stone-400 text-justify'>
+                                        <p className='shortIntro font-light  text-[4vw] lg:text-[1.5vw] lg:w-[50vw]'>
                                             A case study on a high end fashion e-commerce website catering to women who appreciate luxury,
                                             sophistication, and elegance. A responsive website that allows online shoppers to have a 
                                             more efficient and seamless experience.
@@ -1464,8 +1506,8 @@ const FullProject1 = () => {
                 </span>
 
                 <div className='flex justify-center text-justify'> 
-                    <div className='overview-body text-[3.5vw] lg:text-[1.5vw] lg:w-[85vw] tracking-tighter text-stone-400' ref={overviewSec}>
-                        <h1 className='aboutLum mb-[1vw] text-[4.5vw] lg:text-[2.5vw] text-yellow-700'>About Lumière Couture</h1>
+                    <div className='overview-body font-light text-[4vw] lg:text-[1.5vw] lg:w-[85vw] tracking-tighter text-stone-400' ref={overviewSec}>
+                        <h1 className='aboutLum mb-[1vw] mt-[2vw] lg:mt-0 text-[4.5vw] lg:text-[2.5vw] text-yellow-700'>About Lumière Couture</h1>
                         <p className='mb-[3vw] lg:mb-[1.5vw]'>
                             Lumière Couture is a high-end fashion house that offers 
                             a unique blend of art, photography, fashion, and lifestyle. 
@@ -1491,7 +1533,7 @@ const FullProject1 = () => {
 
 
             <section className='bg-neutral-90  relative mt-[20vw] lg:mt-[0vw]'>
-                <div className='h-[105vw] lg:h-[55vw] bgPicSec4 opacity-10'></div>
+                <div className='h-[115vw] lg:h-[55vw] bgPicSec4 opacity-10'></div>
                 <div className='pl-[7vw] absolute top-[5vw] left-0 z-30'>
                         <div className='flex items-center'>
                         <h1 className='the1 theee text-[10vw] lg:text-[8vw] mr-[3vw]'>THE</h1>
@@ -1505,10 +1547,10 @@ const FullProject1 = () => {
                         </div>
 
                         <div>
-                            <span className='aim text-[4.5vw] lg:text-[4vw] text-yellow-700'>Aim Of Research</span>
+                            <span className='aim mt-[2vw] lg:mt-0 text-[4.5vw] lg:text-[4vw] text-yellow-700'>Aim Of Research</span>
                         </div>
                             
-                        <ul className='list text-[3.5vw] lg:text-[1.9vw] text-stone-400 list-disc px-[2vw] pb-[2vw] pt-[1vw] leading-relaxed' ref={goalsParent}>
+                        <ul className='list font-light text-[4vw] lg:text-[1.9vw] text-stone-400 list-disc px-[2vw] pb-[2vw] pt-[1vw] leading-relaxed' ref={goalsParent}>
                             <li>Increase brand awareness</li>
                             <li>Identify user pain points</li>
                             <li>Create a sleek, modern and highly appealing user interface</li>
@@ -1523,8 +1565,8 @@ const FullProject1 = () => {
 
 
             <section className='mt-[20vw] lg:mt-[10vw] relative'>
-                <div className='sec5 h-[175vw] lg:h-screen lg:pl-[3vw] opacity-20 lg:opacity-20'></div>
-                <div className='problem1 lg:w-[75vw] text-[3.5vw] lg:text-[1.2vw] text-justify absolute top-[2vw] lg:left-[5vw]'>
+                <div className='sec5 h-[200vw] lg:h-screen lg:pl-[3vw] opacity-20 lg:opacity-20'></div>
+                <div className='problem1 px-[2vw] lg:px-0 lg:w-[75vw] text-[4vw] lg:text-[1.2vw] text-justify absolute top-[2vw] lg:left-[5vw]'>
                         <div className='flex items-center'>
                             <h1 className='the1 thee text-[10vw] lg:text-[8vw] mr-[3vw]'>THE</h1>
                             <h1 className='theProb flex text-yellow-200 text-[4vw]'>
@@ -1538,10 +1580,10 @@ const FullProject1 = () => {
                             </h1>
                         </div>
 
-                                <ul className='list-disc mt-[2vw]' ref={problemParent}>
+                                <ul className='list-disc mt-[4vw] lg:mt-[2vw]' ref={problemParent}>
                                     <li>
                                         <div className='headingg text-[4.5vw] lg:text-[1.9vw]'>Limited Physical Presence:</div></li>
-                                        <div className='text-stone-400 mb-[2vw] lg:mb-[1.7vw]'>
+                                        <div className='text-stone-400 mb-[4vw] lg:mb-[1.7vw] tracking-tighter lg:tracking-normal'>
                                             Lumière Couture has a limited physical presence, with stores located 
                                             in a few select cities. This makes it difficult for customers who live 
                                             in other areas to access the brand's collections and services.
@@ -1550,7 +1592,7 @@ const FullProject1 = () => {
 
                                     <li>
                                         <div className='headingg text-[4.5vw] lg:text-[1.9vw]'>Customer Engagement:</div></li>
-                                        <div className='text-stone-400 mb-[2vw] lg:mb-[1.7vw]'>
+                                        <div className='text-stone-400 mb-[4vw] lg:mb-[1.7vw] tracking-tighter lg:tracking-normal'>
                                             Engaging with customers and building a community around the brand is 
                                             essential to driving sales and building brand loyalty. However, 
                                             engaging with customers can be challenging, especially when they are 
@@ -1560,7 +1602,7 @@ const FullProject1 = () => {
 
                                     <li>
                                         <div className='headingg text-[4.5vw] lg:text-[1.9vw]'>Lack of Transparency:</div></li>
-                                        <div className='text-stone-400 mb-[2vw] lg:mb-[1.7vw]'>
+                                        <div className='text-stone-400 mb-[4vw] lg:mb-[1.7vw] tracking-tighter lg:tracking-normal'>
                                             Many brands don't provide information on production methods, materials, and pricing, 
                                             to ensure that customers can make informed decisions about their purchases.
                                         </div>
@@ -1568,7 +1610,7 @@ const FullProject1 = () => {
 
                                     <li>
                                         <div className='headingg text-[4.5vw] lg:text-[1.9vw]'>Sustainability Concerns:</div></li>
-                                        <div className='text-stone-400 mb-[2vw] lg:mb-[1.7vw]'>
+                                        <div className='text-stone-400 mb-[4vw] lg:mb-[1.7vw] tracking-tighter lg:tracking-normal'>
                                             With growing concerns about the environmental impact of the fashion industry, 
                                             many customers are looking for brands that prioritize sustainability.
                                         </div>
@@ -1591,9 +1633,9 @@ const FullProject1 = () => {
                     </div>
                     </div>
 
-                    <div className=' mt-[10vw]'>
-                            <div className='text-[4vw]'>
-                                <div className='mb-[3vw] flex items-center'>
+                    <div className='mt-[15vw] lg:mt-[10vw]'>
+                            <div className='text-[4.5vw]'>
+                                <div className='mb-[5vw] lg:mb-[3vw] flex items-center'>
                                     <h1 className='the1 theeee text-[10vw] lg:text-[8vw] mr-[3vw]'>THE</h1>
                                     <div className='theSol flex text-yellow-200'>
                                         <div className='solution1 mr-[4vw] lg:mr-[3vw]'>S</div>
@@ -1607,8 +1649,8 @@ const FullProject1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='solBody text-[3.5vw] lg:text-[1.5vw] text-justify text-stone-400' ref={soluParent}>
-                                <div className='mb-[7vw] lg:mb-[1vw]'>
+                            <div className='solBody text-[4vw] lg:text-[1.5vw] tracking-tighter lg:tracking-normal text-justify text-stone-400' ref={soluParent}>
+                                <div className='mb-[4vw] lg:mb-[1vw]'>
                                     Upon completing problem discovery and validation, I designed a mobile application
                                     to address the identified issues and bring Lumière Couture closer to its customers worldwide. 
                                     The application boasts of a visually pleasing, user-friendly platform that allows for easy 
@@ -1719,11 +1761,11 @@ const FullProject1 = () => {
             <section className='mb-[6vw]'>
                 <div className='bg-yellow-400 pb-[4vw] pt-[3vw] lg:pt-[1vw]  px-[2.5vw] lg:px-[0vw]'>
                     <div className='discc'>
-                        <div className='discover text-[10vw] lg:text-[9.2vw] text-neutral-900 text-center'>DISCOVERING THE PROBLEM</div>
+                        <div className='discover text-[10.5vw] lg:text-[9.2vw] text-neutral-900 text-center'>DISCOVERING THE PROBLEM</div>
                     </div>
                     
                     <div className='flex justify-center'>
-                        <div className='problem2 lg:w-[75vw] text-[3.2vw] lg:text-[1.5vw]'>
+                        <div className='problem2 lg:w-[75vw] text-[4vw] lg:text-[1.5vw] tracking-tighter lg:tracking-normal'>
                             <div className='text-justify mb-[5vw] lg:mb-[2vw]' ref={discoverGroup1}>
                                 <div>
                                     To initiate the design process, I conducted extensive research to gain an 
@@ -1748,7 +1790,7 @@ const FullProject1 = () => {
                             
 
                             <div className='assum'>
-                                <div className='assumption mt-[5vw] lg:mt-[0vw] text-[5vw] lg:text-[2.3vw] tracking-normal leading-[5.5vw]'>
+                                <div className='assumption mt-[5vw] lg:mt-[0vw] text-[5.5vw] lg:text-[2.3vw] tracking-normal leading-[5.7vw]'>
                                     Below are some assumptions made while beginning the research:
                                 </div>
                             </div>
@@ -1777,7 +1819,7 @@ const FullProject1 = () => {
 
                             <div>
                                 <div className='surv'>
-                                    <div className='survey mt-[6vw] lg:mt-[2vw] text-[5vw] lg:text-[2.3vw] leading-[5.5vw]'>A survey was carried out and inference from the result showed that:</div>
+                                    <div className='survey mt-[6vw] lg:mt-[2vw] text-[5.5vw] lg:text-[2.3vw] leading-[5.7vw] tracking-normal'>A survey was carried out and inference from the result showed that:</div>
                                 </div>
 
                                 <div>
@@ -1813,7 +1855,7 @@ const FullProject1 = () => {
 
                 {/* DEFINE PHASE */}
             <section className='pt-[5vw] lg:mb-[8vw]'>
-                <div className='h-screen flex lg:flex-none items-center justify-center'>
+                <div className='h-[70vh] md:h-screen flex lg:flex-none items-center justify-center'>
                 <div className='flex flex-col text-yellow-200 justify-center items-center'>
                     <div className='deefn'>
                         <div className='define text-[20vw]' id='defn'>DEFINE</div>
@@ -1855,7 +1897,7 @@ const FullProject1 = () => {
                             <div className='persona text-[19vw] lg:text-[10vw] text-stone-600 h-[25vw] lg:h-[13vw] text-center lg:text-start'>Personas</div>
                         </div>
                       
-                        <div className='personaNote text-[4vw] lg:text-[1.75vw] uppercase text-neutral-500 leading-5 sm:leading-7 md:leading-9 lg:leading-5 text-center lg:text-start'>
+                        <div className='personaNote text-[5vw] lg:text-[1.75vw] uppercase text-neutral-500 leading-6 sm:leading-8 md:leading-10 lg:leading-5 text-center lg:text-start'>
                             Ideal target users were created from the data collected on the survey
                             and interviews. They explain my research on Lumière Couture users in a subtle
                             way.
@@ -1888,7 +1930,7 @@ const FullProject1 = () => {
                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full lg:w-[58vw]'></div>
                                     </div>
 
-                                    <div className='tag lovesShopP text-stone-600 text-[5vw] lg:text-[2.7vw] text-center lg:text-start'>
+                                    <div className='tag lovesShopP text-stone-600 text-[7.5vw] lg:text-[2.7vw] text-center lg:text-start'>
                                         <div className='lovesShopC'>"Loves online shopping"</div>
                                     </div>
 
@@ -1897,8 +1939,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>NAME:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Joules Washington</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>NAME:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Joules Washington</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1906,8 +1948,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>AGE:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> 25</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>AGE:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> 25</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1915,8 +1957,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>OCCUPATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Fashion Blogger</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>OCCUPATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Fashion Blogger</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1924,8 +1966,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>MARITAL STATUS:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Single</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>MARITAL STATUS:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Single</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1933,8 +1975,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>EDUCATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Bachelor's degree in Fashion Design</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>EDUCATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Bachelor's degree in Fashion Design</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1942,8 +1984,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>LOCATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'>Paris, France</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>LOCATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'>Paris, France</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1951,8 +1993,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>INTEREST:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Fashion, photography, travel, and social media</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>INTEREST:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Fashion, photography, travel, and social media</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -1965,7 +2007,9 @@ const FullProject1 = () => {
 
                                 <div>
                                     <div>
-                                        <div className='desc text-[4vw] lg:text-[1.5vw] mt-[5vw] lg:mt-[2vw] text-center text-yellow-300'>DESCRIPTION</div>
+                                        <div className='desc text-[6vw] lg:text-[1.5vw] mt-[5vw] lg:mt-[2vw] text-center text-yellow-300'>DESCRIPTION</div>
+
+                                         {/* about Persona Large Screen */}
                                         <div className='flex justify-center'>
                                             <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full lg:w-[58vw]'></div>
                                         </div>
@@ -2013,56 +2057,69 @@ const FullProject1 = () => {
 
                                         {/* about Persona Small Screen */}
                                         <div>
-                                            <div className='aboutPersona text-justify text-[3vw] lg:[display:none]'>
-                                                Sarah is a fashion blogger who enjoys writing about the 
+                                            <div className='aboutPersona text-justify text-[4vw] lg:[display:none]'>
+                                                
+                                                Joules is a fashion blogger who enjoys writing 
+
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                about the latest fashion trends and show-  
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                latest fashion trends and  showcasing her personal style. she 
+                                                casing her personal style. she shops online 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                frequently and is always on the lookout for
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                shops online frequently and is always on the lookout for
+                                                unique and stylish clothing that can help her 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                unique and stylish clothing that can help her stand out on
+                                                stand out on social media. She values a web- 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                               social media. She values a  website that offers a wide range 
+                                                site that offers a wide range of fashion items 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                of fashion items and is easy to navigate. She  also 
+                                                and is easy to navigate. She also appreciates  
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                appreciates a website that offers a wide range of outfits 
+                                                a website that offers a wide range of outfits 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                where all her needs can be met. A website 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                where all her needs can be met. A website that has a strong
-
-                                                <div className='flex justify-center'>
-                                                    <div className='linee h-[0.2vw] w-full'></div>
-                                                </div>
-
-                                                social media presence.
+                                                that has a strong social media presence.
                                             </div>
                                         </div>
 
@@ -2075,7 +2132,7 @@ const FullProject1 = () => {
                                         <div>
                                             <div className='lg:flex'>
                                                 <div className='w-full lg:w-[29vw]'>
-                                                    <h1 className='sarah goals text-[4vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
+                                                    <h1 className='sarah goals text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2090,22 +2147,24 @@ const FullProject1 = () => {
                                                         </ul>
 
                                                         {/* Small Screen */}
-                                                        <ul className='sarah1 list-disc  text-[3vw] lg:[display:none]'>
+                                                        <ul className='sarah1 list-disc text-[4vw] lg:[display:none]'>
                                                             {/* <li>Get a personalized shopping experience that caters to her individual needs.</li> */}
-                                                            <li>Find stylish clothing that is appropriate for her body type.</li>
+                                                            <li>
+                                                                Find stylish clothing that is appropriate for 
+
+                                                            <div className='flex justify-center'>
+                                                                <div className='linee h-[0.2vw] w-full'></div>
+                                                            </div>
+
+                                                                her body type.
+                                                            </li>
 
                                                             <div className='flex justify-center'>
                                                                 <div className='linee h-[0.2vw] w-full'></div>
                                                             </div>
 
                                                             <li>
-                                                                Use a website that is easy to navigate and has a fast 
-                                                                
-                                                            <div className='flex justify-center'>
-                                                                <div className='linee h-[0.2vw] w-full'></div>
-                                                            </div>
-                                                            
-                                                                checkout process.
+                                                                Use a website that is easy to navigate and has a fast checkout process.
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -2117,7 +2176,7 @@ const FullProject1 = () => {
                                                 </div>
 
                                                 <div className='frusContainer w-full lg:w-[29vw] lg:border-l-[0.2vw] lg:border-stone-500'>
-                                                    <h1 className='sarah frustration text-[4vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
+                                                    <h1 className='sarah frustration text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2132,25 +2191,36 @@ const FullProject1 = () => {
                                                         </ul>
 
                                                         {/* Small Screens */}
-                                                        <ul className='sarah1 list-disc  text-[3vw] lg:[display:none]'>
+                                                        <ul className='sarah1 list-disc  text-[4vw] lg:[display:none]'>
                                                             <li>
-                                                                Utilizing payment platforms that lack popularity 
-                                                                and a 
-                                                                
-                                                            <div className='flex justify-center'>
-                                                                <div className='linee h-[0.2vw] w-full'></div>
-                                                            </div>
+                                                                    Utilizing payment platforms that lack 
 
-                                                                solid history of proven integrity and security.
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>                      
+                                                                
+                                                                    popularity and a solid history of proven 
+
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>       
+                                                                    
+                                                                    integrity and security.
+
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>  
                                                             </li>
 
+
                                                             <li>
-                                                                The stress of having to create an account before 
-                                                                
-                                                            <div className='flex justify-center'>
+                                                                The stress of having to create an account  
+
+                                                             <div className='flex justify-center'>
                                                                 <div className='linee h-[0.2vw] w-full'></div>
-                                                            </div>
-                                                                starting online shopping.
+                                                            </div>    
+                                                                
+                                                                before starting online shopping.
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -2173,7 +2243,7 @@ const FullProject1 = () => {
                                 {/* SECOND PERSONA */}
 
                         
-                        <div className='lg:[display:none] mt-[10vw] lg:mt-[0vw]'>
+                        <div className='lg:[display:none] mt-[20vw] lg:mt-[0vw]'>
                             <div className='zeroOne ttwwoo text-[17vw] text-stone-600 text-center'>02</div>
                         </div>
                         <div className='flex flex-col-reverse lg:flex-row  lg:justify-between lg:mt-[11vw]'>
@@ -2184,8 +2254,10 @@ const FullProject1 = () => {
                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full lg:w-[58vw]'></div>
                                     </div>
 
-                                    <div className='tag text-stone-600 text-[5vw] lg:text-[2.7vw] text-center lg:text-start'>
-                                        <div className='busyToShopC'>"Too busy to go out shopping"</div>
+                                    <div className='tag text-stone-600 text-[7.5vw] lg:text-[2.7vw] text-center lg:text-start'>
+                                        <div className='busyToShopC'>
+                                            "Too busy to go out shopping"
+                                        </div>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2193,8 +2265,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>NAME:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Kate Toussaint</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>NAME:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Kate Toussaint</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2202,8 +2274,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>AGE:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> 33</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>AGE:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> 33</span>
                                     </div>
                                     
                                     <div className='flex justify-center'>
@@ -2211,8 +2283,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>OCCUPATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Lawyer</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>OCCUPATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Lawyer</span>
                                     </div>
                                     
                                     <div className='flex justify-center'>
@@ -2220,8 +2292,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>MARITAL STATUS:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Married with two children</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>MARITAL STATUS:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Married with two children</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2229,8 +2301,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>EDUCATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'> Law degree</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>EDUCATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'> Law degree</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2238,8 +2310,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>LOCATION:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'>Paris, France</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>LOCATION:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'>Paris, France</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2247,8 +2319,8 @@ const FullProject1 = () => {
                                     </div>
 
                                     <div>
-                                        <span className='title text-[2.6vw] lg:text-[1vw] '>INTEREST:</span>
-                                        <span className='ans text-[3.5vw] lg:text-[1.9vw]'>Fine dining, luxury travel, fashion, and art</span>
+                                        <span className='title text-[3.5vw] lg:text-[1vw] '>INTEREST:</span>
+                                        <span className='ans text-[4.5vw] lg:text-[1.9vw]'>Fine dining, luxury travel, fashion, and art</span>
                                     </div>
 
                                     <div className='flex justify-center'>
@@ -2262,11 +2334,12 @@ const FullProject1 = () => {
                                
                                 <div>
                                     <div>
-                                        <div className='desc text-[4vw] lg:text-[1.5vw] mt-[5vw] lg:mt-[2vw] text-center text-yellow-300'>DESCRIPTION</div>
+                                        <div className='desc text-[6vw] lg:text-[1.5vw] mt-[5vw] lg:mt-[2vw] text-center text-yellow-300'>DESCRIPTION</div>
                                         <div className='flex justify-center'>
                                             <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full lg:w-[58vw]'></div>
                                         </div>
 
+                                         {/* about Persona Large screen */}
                                         <div className='aboutPersona text-justify [display:none] lg:[display:block] text-[1.3vw]'>  
                                             Kate is a high-income earner who values luxury fashion and has a keen
                                             interest in 
@@ -2301,44 +2374,56 @@ const FullProject1 = () => {
 
                                         {/* about Persona small screen */}
                                         <div>
-                                            <div className='aboutPersona text-justify text-[3vw] lg:[display:none]'>
-                                                Olivia is a high-income earner who values luxury fashion and
+                                            <div className='aboutPersona text-justify text-[4vw] lg:[display:none]'>
+                                                Olivia is a high-income earner who values
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                has a keen interest in  keeping up with the latest fashion
+                                                luxury fashion and has a keen interest in  
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                trends. She is a busy professional and often online due to her 
+                                                keeping up with the latest fashion trends. She 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                is a busy professional and often online due to 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                busy schedule. She enjoys designer labels and has a
+                                                her busy schedule. She enjoys designer labels 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                preference for  high-quality materials  and craftsmanship.
+                                                and has a preference for  high-quality mate-
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                She also appreciates personalized customer service and
+                                                rials  and craftsmanship. She also appreciates 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                 shopping experiences that make  her feel special.                                              
+                                                personalized customer service and shopping 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                experiences that make  her feel special.                                              
                                             </div>
                                         </div>
 
@@ -2353,7 +2438,7 @@ const FullProject1 = () => {
                                         <div>
                                             <div className='lg:flex'>
                                                 <div className='w-full lg:w-[29vw]'>
-                                                    <h1 className='olivia goals text-[4vw] lg:text-[1.2vw] mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
+                                                    <h1 className='olivia goals text-[6vw] lg:text-[1.2vw] mt-[3vw] lg:mt-[1vw]'>GOALS</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2367,21 +2452,30 @@ const FullProject1 = () => {
                                                         </ul>
 
                                                         {/* Small Screen */}
-                                                        <ul className='olivia1 list-disc text-[3vw] lg:[display:none]'>
+                                                        <ul className='olivia1 list-disc text-[4vw] lg:[display:none]'>
                                                             <li>
-                                                                Purchase a dress online that is suitable for both indoor and 
+                                                                Purchase a dress online that is suitable for 
                                                                 
                                                             <div className='flex justify-center'>
                                                                 <div className='linee h-[0.2vw] w-full'></div>
                                                             </div>
 
-                                                                outdoor events.
+                                                                both indoor and outdoor events.
+
                                                             <div className='flex justify-center'>
                                                                 <div className='linee h-[0.2vw] w-full'></div>
                                                             </div>
                                                             
                                                             </li>  
-                                                            <li>Get dress options in her preferred style or silhouette.</li>
+                                                            <li>
+                                                                Get dress options in her preferred style or 
+                                                                
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>
+                                                                
+                                                                silhouette.
+                                                            </li>
                                                         </ul>
                                                     </div>
 
@@ -2393,7 +2487,7 @@ const FullProject1 = () => {
 
                                                 {/* Frustration */}
                                                 <div className='frusContainer w-full lg:w-[29vw] lg:border-l-[0.2vw] lg:border-stone-500'>
-                                                    <h1 className='olivia frustration text-[4vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
+                                                    <h1 className='olivia frustration text-[6vw] lg:text-[1.2vw]  mt-[3vw] lg:mt-[1vw]'>FRUSTRATION</h1>
 
                                                     <div className='flex justify-center'>
                                                         <div className='linee h-[0.2vw] lg:h-[0.15vw] w-full'></div>
@@ -2411,16 +2505,22 @@ const FullProject1 = () => {
                                                         </ul>
 
                                                         {/* Small Screen */}
-                                                        <ul className='olivia1 list-disc text-[3vw] lg:[display:none]'>
+                                                        <ul className='olivia1 list-disc text-[4vw] lg:[display:none]'>
                                                             {/* <li>Get expert fashion advice and styling tips from a contact online when making selection.</li> */}
                                                             <li>
-                                                                She's extremely busy and can't find the time to go out 
+                                                                She's extremely busy and can't find the time 
                                                                 
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                                 </div>
 
-                                                                shopping at her favourite brand and store.
+                                                                to go out shopping at her favourite brand 
+
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>
+
+                                                                and store.
                                                             
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
@@ -2428,12 +2528,19 @@ const FullProject1 = () => {
                                                             </li>
 
                                                             <li>
-                                                                She gets overwhelmed by too many unorganized products 
+                                                                She gets overwhelmed by too many un-
                                                                 
                                                                 <div className='flex justify-center'>
                                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                                 </div>
-                                                                and information on most online shopping platforms.
+
+                                                                organized products and information on 
+                                                                
+                                                                <div className='flex justify-center'>
+                                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                                </div>
+                                                                
+                                                                most online shopping platforms.
                                                             </li>
                                                             {/* <li>Difficulty to get a dress that is easy to care for and requires no special 
                                                                 maintenance.</li> */}
@@ -2478,7 +2585,7 @@ const FullProject1 = () => {
 
 
                            
-                    <div className='bg-black lg:bg-zinc-900 text-[3.7vw] lg:text-[1.23vw]'>
+                    <div className='bg-black lg:bg-zinc-900 text-[4vw] lg:text-[1.23vw]'>
 
                              {/* SARAH EMPATHY MAPPING */}
                         <div className='flex lg:border-stone-500 lg:border-[0.3vw]'>
@@ -2499,7 +2606,7 @@ const FullProject1 = () => {
 
 
 
-                                <div className='text-stone-400 text-cente lg:text-left'>
+                                <div className='text-stone-400 lg:text-left'>
                                     <div className='space space1 lg:flex lg:h-[30vw] lg:border-stone-500 lg:border-[0.3vw]'>
                                         <div className=' lg:w-[35vw] p-[6vw] lg:p-[3vw] border-stone-500  border-[0.3vw] lg:border-0 lg:border-r-[0.3vw]'>
 
@@ -2695,13 +2802,13 @@ const FullProject1 = () => {
                 <div className='flex justify-center lg:justify-end '>
                    <div>
                         <div className='flex justify-center lg:justify-end'>
-                            <div className='promNote lg:w-[60vw] px-[8vw] lg:px-0 text-[4.5vw] lg:text-[3.7vw] text-yellow-100 text-justify'>
+                            <div className='promNote lg:w-[60vw] px-[8vw] lg:px-0 text-[6vw] lg:text-[3.7vw] text-yellow-100 text-justify tracking-tighter lg:tracking-normal'>
                                 <div className='probText1 text-justify'>
                                     Once the objectives were established, I formulated a problem statement that would serve as a 
                                     reference point throughout the design process:
                                 </div>
 
-                                <div className='prnote1 probText2 mt-[3vw]'>
+                                <div className='prnote1 probText2 mt-[14vw] lg:mt-[3vw]'>
                                     " How can we create an efficient and seamless fashion e-commerce website that enhances the 
                                     experience of Lumière Couture's current and potential customers? "
                                 </div>
@@ -2740,7 +2847,7 @@ const FullProject1 = () => {
                     <div>
                         <div className='infoArch h-[11.5vw] text-[12vw] lg:text-[8vw] text-neutral-600 lg:h-[7vw]'>Information</div>
                         <div>
-                            <div className='archP flex text-yellow-100 text-[3.5vw] lg:text-[3vw] mt-[2vw] mb-[4vw] lg:mb-[2vw]'>
+                            <div className='archP flex text-yellow-100 text-[3.5vw] lg:text-[3vw] mt-[2vw] mb-[5vw] lg:mb-[2vw]'>
                                 <div className='arch mr-[4.5vw] lg:mr-[3vw]'>A</div>
                                 <div className='arch mr-[4.5vw] lg:mr-[3vw]'>R</div>
                                 <div className='arch mr-[4.5vw] lg:mr-[3vw]'>C</div>
@@ -2758,7 +2865,7 @@ const FullProject1 = () => {
                     </div>
 
                     <div>
-                        <div className='infoArchNote text-[3vw] lg:text-[1.7vw] text-neutral-400'>
+                        <div className='infoArchNote text-[4vw] lg:text-[1.7vw] text-neutral-400'>
                             I created the Information Architecture to map out the whole website.
                         </div>
                     </div>
@@ -2788,7 +2895,7 @@ const FullProject1 = () => {
                     </div>
 
                     <div>
-                        <div className='userflowNote text-[3vw] lg:text-[1.35vw] text-neutral-500 text-justify lg:text-left'>
+                        <div className='userflowNote text-[4vw] lg:text-[1.35vw] text-neutral-500 text-justify tracking-tighter lg:tracking-normal lg:text-left'>
                          The userflow diagram was developed with the objective of facilitating seamless 
                          navigation on the website. With the key features in mind, the diagram was carefully 
                          crafted to consider the user's interactions with various pages, the decisions made, 
@@ -2865,7 +2972,7 @@ const FullProject1 = () => {
                     </div>
 
                     <div>
-                        <div className='pWireframeNote text-[3vw] lg:text-[1.35vw] text-neutral-500 text-justify'>
+                        <div className='pWireframeNote text-[4vw] lg:text-[1.35vw] mt-[1.5vw] lg:mt-0 text-neutral-500 text-justify'>
                             In the initial stages of designing the app, I opted to create 
                             rough sketches on paper. This approach allowed me to focus on 
                             establishing the structural foundation of the app and prevented 
@@ -2875,9 +2982,9 @@ const FullProject1 = () => {
                         </div>
 
 
-                        <div className='skt flex justify-end mt-[2vw]'>
+                        <div className='skt flex justify-end mt-[4vw] lg:mt-[2vw]'>
                             <Link to="/Sketches">
-                                <div className='viewSketch text-[2.5vw] lg:text-[2vw] text-stone-200 uppercase underline'>View Sketches</div>
+                                <div className='viewSketch text-[3vw] lg:text-[2vw] text-stone-200 uppercase underline'>View Sketches</div>
                             </Link>
                         </div>
                     </div>
@@ -2902,7 +3009,7 @@ const FullProject1 = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <div className='dWireframeNote text-[3vw] lg:text-[1.35vw] text-neutral-500 mb-[2vw] text-justify lg:text-left'>
+                        <div className='dWireframeNote text-[4vw] lg:text-[1.35vw] text-neutral-500 mb-[2vw] mt-[1.5vw] lg:mt-0 text-justify tracking-tighter lg:tracking-normal lg:text-left'>
                             After creating sketches, I proceeded to transform them into low and high fidelity 
                             wireframes using Figma. This process enabled me to breathe life into my vision and obtain a 
                             realistic representation of my design objectives.
@@ -3095,7 +3202,7 @@ const FullProject1 = () => {
 
 
                             <div className='mt-[20vw] lg:mt-[10vw]'>
-                                <div className='homePg text-[3vw] text-center mb-[4vw]'>
+                                <div className='homePg text-[3.5vw] lg:text-[3vw] text-center mb-[4vw]'>
                                     <span className='home'>H</span>
                                     <span className='home'>O</span>
                                     <span className='home'>M</span>
@@ -3171,6 +3278,7 @@ const FullProject1 = () => {
                             <div className='mt-[15vw]'>
                                 <div className='lg:flex justify-around items-center'>
 
+                                                {/* CONCEPT Large Screen */}
                                     <div className='[display:none] lg:[display:block]'>
                                         <div className='conceptLgPg text-[3vw] lg:text-center mb-[4vw] ml-[2vw]'>
                                             <span className='concept'>C</span>
@@ -3211,6 +3319,7 @@ const FullProject1 = () => {
                                         </div>
 
 
+                                                        {/* Concept Small Screen */}
                                     <div className='flex justify-center items-center lg:[display:none]'>
                                         <div>
                                             <div className='concptSmPg text-[3.5vw] text-center mb-[4vw] ml-[2vw]'>
@@ -3461,8 +3570,8 @@ const FullProject1 = () => {
 
 
                                                     {/* REFLECTION SECTION */}
-                            <div className='mt-[25vw] lg:mt-[15vw]'>
-                                <div className='rflct flex justify-center text-[5.5vw] lg:text-[5vw] text-neutral-500'>
+                            <div className='mt-[35vw] lg:mt-[15vw]'>
+                                <div className='rflct flex justify-center text-[6vw] lg:text-[5vw] text-neutral-500'>
                                     <h1 className='rflct1'>
                                         <span className='reflect mr-[5vw] lg:mr-[4vw]'>R</span>
                                         <span className='reflect mr-[5vw] lg:mr-[4vw]'>E</span>
@@ -3478,8 +3587,8 @@ const FullProject1 = () => {
                                 </div>
 
 
-                                <div className='flex justify-center mt-[2vw]'>
-                                    <div className='reflectNote rflctNote text-[3vw] lg:text-[1.3vw] text-stone-200 lg:w-[60vw] text-justify lg:text-center'>
+                                <div className='flex justify-center mt-[5vw] lg:mt-[2vw]'>
+                                    <div className='reflectNote rflctNote text-[4vw] lg:text-[1.3vw] text-stone-200 lg:w-[60vw] text-justify tracking-tighter lg:tracking-normal lg:text-center'>
                                         <div className='mb-[1.5vw] lg:mb-[1vw]'>
                                             During the project, I discovered the elegance of UX Design. I had the opportunity 
                                             to develop my UX abilities by utilizing the human-centered design thinking approach 
@@ -3503,7 +3612,7 @@ const FullProject1 = () => {
                                                 {/* CONCLUSION SECTION */}
                             <div className='mt-[25vw] lg:mt-[15vw]'>
                                 <div>
-                                    <div className='text-center conc lg:text-left text-[5.5vw] text-[5vw] text-neutral-500 lg:ml-[5vw]'>
+                                    <div className='text-center conc lg:text-left text-[6vw] lg:text-[5vw] text-neutral-500 lg:ml-[5vw]'>
                                         <h1 className='conc1'>
                                             <span className='reflect mr-[5vw] lg:mr-[4vw]'>C</span>
                                             <span className='reflect mr-[5vw] lg:mr-[4vw]'>O</span>
@@ -3519,8 +3628,8 @@ const FullProject1 = () => {
                                     </div>
 
 
-                                    <div className='mt-[2vw]'>
-                                        <div className='reflectNote concNote text-[3vw] lg:text-[1.3vw] text-stone-200 lg:w-[80vw] text-justify lg:text-center'>
+                                    <div className='mt-[5vw] lg:mt-[2vw]'>
+                                        <div className='reflectNote concNote text-[4vw] lg:text-[1.3vw] text-stone-200 lg:w-[80vw] text-justify tracking-tighter lg:tracking-normal lg:text-center'>
                                             <div>
                                                 The primary objective of the product was to enable users to access a vast collection of 
                                                 fashion products and conveniently place orders from their preferred luxury fashion store, 
@@ -3534,8 +3643,8 @@ const FullProject1 = () => {
                             </div>
 
 
-                            <div className='thank-Share mt-[25vw] lg:mt-[15vw] text-yellow-100'>
-                                <div className='ml-[6vw] text-[5vw]'>
+                            <div className='thank-Share mt-[35vw] lg:mt-[15vw] text-yellow-100'>
+                                <div className='ml-[6vw] text-[6vw] lg:text-[5vw]'>
                                     <div className='share w-[40vw]'>
                                         <div>Share your</div>
                                         <div>thoughts.</div>
@@ -3543,8 +3652,8 @@ const FullProject1 = () => {
                                 </div>
 
 
-                                <div className='thanks flex justify-end text-[10vw] mr-[5vw]'>
-                                    <div className='mt-[5vw]'>
+                                <div className='thanks flex justify-end text-[11vw] lg:text-[10vw] mr-[5vw]'>
+                                    <div className='mt-[14vw] lg:mt-[5vw]'>
                                         <div>Thanks</div>
                                         <div className='mt-[-3vw]'>for your time!</div>
                                     </div>
@@ -3554,15 +3663,15 @@ const FullProject1 = () => {
 
 
                                                 {/* BARCODE DESIGN */}
-                            <div className='endBarcode pb-[15vw]'>
-                                <div className='flex justify-center mt-[12vw]'>
-                                        <div className='w-[40vw] h-[15vw]'> 
+                            <div className='endBarcode pb-[35vw] lg:pb-[15vw]'>
+                                <div className='flex justify-center mt-[20vw] lg:mt-[12vw]'>
+                                        <div className='w-[45vw] lg:w-[40vw] h-[18vw] lg:h-[15vw]'> 
                                             <img className='h-full w-full object-cover ' src= {iron1} alt= "batch"></img>
                                         </div>
                                     </div>
 
                                     <div className='flex justify-center'>
-                                        <div className='mt-[2vw] text-[1.7vw] text-stone-200'>
+                                        <div className='mt-[2vw] text-[2.2vw] lg:text-[1.7vw] text-stone-200'>
                                             <span className='batchChief mr-[1vw]'>
                                                 THE CLAN CHIEF
                                             </span>
@@ -3574,8 +3683,8 @@ const FullProject1 = () => {
 
                             
                             <div className='flex items-end justify-center pb-[1vw]'>
-                                <div className='year ttwothreee  flex justify-center items-center text-[1.5vw]'>
-                                    <div className='w-[1vw] h-[1vw] mr-[0.4vw] mb-[0.4vw] mt-[0.6vw] lg:mt-0 lg:mb-[0.1vw]'>
+                                <div className='year ttwothreee  flex justify-center items-center text-[3vw] lg:text-[1.5vw]'>
+                                    <div className='w-[1.9vw] lg:w-[1vw] h-[1.9vw] lg:h-[1vw] mr-[0.4vw] mb-[0.4vw] mt-[0.6vw] lg:mt-0 lg:mb-[0.1vw]'>
                                         <img className='h-full w-full' src= {cee} alt= "copyright"></img>
                                     </div>
                                     <div className='text-stone-200'>2023</div>

@@ -58,7 +58,7 @@ useEffect(() => {
             </div>
 
 
-                <div className='absolute bottom-[18vw] lg:bottom-[3vw] right-[3vw]' ref={tBrand}>
+                <div className='absolute bottom-[11vw] lg:bottom-[3vw] right-[3vw]' ref={tBrand}>
                     <div className='h-[11vw] w-[11vw] md:h-[7.5vw] md:w-[7.5vw] rounded-full bg-zinc-900 flex justify-center items-center animate-spin'>
                     
                                     <div className='long w-[2.75vw] lg:w-[2.5vw] h-[0.9vw] lg:h-[0.7vw] bg-stone-200'></div>

@@ -408,7 +408,7 @@ export default function Section1() {
             </div>
 
                 {/* 5th Child */}
-            <div className='aboutChildSec appFont text-stone-400 mb-20 md:font-bold lg:mb-[4vw]'>
+            <div className='aboutChildSec appFont text-stone-400 mb-20 font-light md:font-bold lg:mb-[4vw]'>
                 <p>
                     I love to explore possibities, strive to know more and everly open minded to constant improvement. 
                     I enjoy working with people that love aesthetics, like minded individuals that evolve with the times,
@@ -418,7 +418,7 @@ export default function Section1() {
         </div>
 
             <div className='lg:ml-16 xl:ml-[3.7vw] 6xl:ml-[4vw] mt-9 lg:mt-12 xl:mt-0'>
-                <div className='free text-stone-600 md:text-stone-400 ml-9 w-12 sm:w-[160px] lg:w-[480px] xl:w-[34vw] h-96 text-3xl sm:text-6xl lg:text-7xl  xl:text-[10.4vw] hover:text-red-800 md:hover:text-stone-700 lg:hover:text-stone-200' ref={language}>
+                <div className='free text-red-900 md:text-stone-400 ml-9 w-12 sm:w-[160px] lg:w-[480px] xl:w-[34vw] h-96 text-3xl sm:text-6xl lg:text-7xl  xl:text-[10.4vw] hover:text-stone-400 md:hover:text-stone-700 lg:hover:text-stone-200' ref={language}>
                         <div>
                             <span className='lang'>这</span>
                             <span className='lang'>是</span>

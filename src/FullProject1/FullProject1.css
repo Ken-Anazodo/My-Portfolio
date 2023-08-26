@@ -142,7 +142,6 @@ iframe{
 
 .overview-body{
     font-family: 'Poppins', sans-serif; 
-    font-weight: 300;
 }
 
 .aboutLum{
@@ -172,7 +171,6 @@ iframe{
 
 .list{
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
 }
 
 .sec5{
@@ -298,12 +296,13 @@ iframe{
 
 .discover{
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     transform: translate(0, 15vw);
 }
 
 .problem2{
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .assum{
@@ -326,6 +325,7 @@ iframe{
 
 .survey{
     font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
     transform: translate(0, 10vw);
 }
 
@@ -514,7 +514,7 @@ iframe{
 .userflow{
     font-family: 'Bodoni Moda', serif;
     transform: translate(0, -25vw);
-    line-height: 4.2vw;
+    line-height: 4.5vw;
 }
 
 .userflowNote{

@@ -161,7 +161,7 @@ const IntroContinue = () => {
 
 
 					<div className='h-full w-full flex justify-center md:justify-start absolute top-0 left-0'>
-						<div className='flex justify-center md:justify-start text-zinc-900  mt-[7vw] md:mt-[4vw] lg:mt-[2vw] z-20 md:ml-[10vw]'>
+						<div className='flex justify-center md:justify-start text-zinc-950  mt-[7vw] md:mt-[4vw] lg:mt-[2vw] z-20 md:ml-[10vw]'>
 							<div>
 								<div className='text-center flex justify-center items-center md:flex-col md:justify-start md:items-start lg:flex-row lg:items-center'>
 									<div className='lett'>
@@ -186,7 +186,7 @@ const IntroContinue = () => {
 
 
 					<div className='h-full w-full flex justify-center items-end absolute top-0 left-0'>
-						<div className='allEx flex justify-center items-center text-zinc-900 text-[2.8vw] md:text-[1.9vw] lg:text-[1.1vw] mb-[40vw] md:mb-[20vw] lg:mb-[2vw] z-20'>
+						<div className='allEx flex justify-center items-center text-zinc-950 text-[2.8vw] md:text-[1.9vw] lg:text-[1.1vw] mb-[40vw] md:mb-[20vw] lg:mb-[2vw] z-20'>
 							<div>ALL NEW EXCLUSIVE</div>
 						</div>
 

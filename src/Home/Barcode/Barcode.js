@@ -32,13 +32,13 @@ const Barcode = () => {
         <div className='bCode h-[65vh] flex items-center justify-center'>
             <div>
                 <div className='flex justify-center'>
-                    <div className='w-[40vw] h-[15vw]'> 
+                    <div className='w-[48vw] lg:w-[40vw] h-[22vw] lg:h-[15vw]'> 
                         <img className='h-full w-full object-cover' src= {barcodee} alt= "barcode"></img>
                     </div>
                 </div>
 
                 <div className='flex justify-center'>
-                    <div className='mt-[2vw] text-[1.7vw] text-black'>
+                    <div className='mt-[2.5vw] lg:mt-[2vw] text-[2.2vw] lg:text-[1.7vw] text-black'>
                         <span className='barcode'>
                             <span className='bar'>11102 </span> 
                             <span className='bar'>100004500</span>  
@@ -51,8 +51,8 @@ const Barcode = () => {
         </div>
 
         <div className='ycc flex items-end justify-center'>
-            <div className='year flex justify-center items-center text-[2vw] lg:text-[1.2vw]'>
-                <img className='w-[1vw] h-[1vw] mr-[0.2vw] mb-[0.15vw] lg:mb-[0.1vw]' src= {circle} alt= "copyright"></img>
+            <div className='year flex justify-center items-center text-[3vw] lg:text-[1.2vw]'>
+                <img className='w-[1.9vw] lg:w-[1vw] h-[1.9vw] lg:h-[1vw] mr-[0.2vw] mb-[0.15vw] lg:mb-[0.1vw]' src= {circle} alt= "copyright"></img>
                 <div>2023</div>
             </div>
         </div>

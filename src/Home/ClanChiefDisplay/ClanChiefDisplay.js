@@ -117,7 +117,7 @@ const ClanChiefDisplay = () => {
                       
                       {/* DISPLAY MOBILE */}
                           <div className='appFonts text-[7vw] mt-[2vw] text-red-900  xs:[display:none]'>
-                              <div className='f23 fo font-black'>Folio</div>
+                              <div className='f23 font-black'>Folio</div>
                               <div className='f23'>2023</div>
                           </div>
 
