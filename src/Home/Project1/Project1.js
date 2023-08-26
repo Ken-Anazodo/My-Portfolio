@@ -340,9 +340,9 @@ const Project1 = () => {
               <Link to="/FullProject1">
                   <div className='ml-[2vw] flex justify-center items-center mt-[5vw]'>
                     <div className='lm'>
-                        <div className='lm1 text-stone-400 hover:text-neutral-700'>
-                            <span className='l text-[3.5vw] lg:text-[2.5vw]'>L</span>
-                            <span className='learnMore mr-[1.5vw] tracking-widest text-[3vw] lg:text-[2vw]'>EARN MORE</span>
+                        <div className='lm1 text-yellow-600  hover:text-neutral-700'>
+                            <span className='l text-[4.5vw] lg:text-[2.5vw]'>L</span>
+                            <span className='learnMore mr-[1.5vw] tracking-widest text-[4vw] lg:text-[2vw]'>EARN MORE</span>
                         </div>
                     </div>
                     <div className='animate-ping'><img className='w-[2.5vw] lg:w-[2vw] h-[2.5vw] lg:h-[2vw]' src= {arr3} alt= "arrow"></img></div>

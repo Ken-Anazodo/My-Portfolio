@@ -1917,7 +1917,7 @@ const FullProject1 = () => {
                              {/* SARAH IMG */}
                             <div className='w-full lg:w-[30vw] bg-white h-[120vw] lg:h-[55vw] relative'>
                                 <div>
-                                    <div className='w-full h-full bg-stone-500 absolute overflow-hidden transition-all grayscale brightness-100 hover:filter-none' ref={persona1}>
+                                    <div className='w-full h-full bg-stone-500 absolute overflow-hidden transition-all lg:grayscale brightness-100 hover:filter-none' ref={persona1}>
                                         <img className='pic h-[100%] w-[100%] object-cover' src= {img18} alt= "Persona 1"></img>
                                     </div>
                                     <div className='w-full h-full absolute z-20 bg-black' ref={personaReveal1}></div>
@@ -2576,7 +2576,7 @@ const FullProject1 = () => {
                                          {/* OLIVIIA IMG */}
                             <div className='w-full lg:w-[30vw] bg-white h-[120vw] lg:h-[55vw] relative '>
                                 <div>
-                                    <div className='w-full h-full bg-stone-500 absolute overflow-hidden transition-all grayscale brightness-100 hover:filter-none' ref={persona2}>
+                                    <div className='w-full h-full bg-stone-500 absolute overflow-hidden transition-all lg:grayscale brightness-100 hover:filter-none' ref={persona2}>
                                         <img className='pic h-[100%] w-[100%] object-cover' src= {img19} alt= "Persona 2"></img>
                                     </div>
                                     <div className='w-full h-full absolute z-20 bg-black' ref={personaReveal2}></div>
@@ -2896,7 +2896,7 @@ const FullProject1 = () => {
             <section className='mt-[20vw] lg:mt-[10vw]'>
                 <div className='pl-[1vw]'>
                     <div>
-                        <div className='userflowHead flex text-yellow-100 text-[6vw] lg:text-[5vw] mt-[2vw] mb-[2vw]'>
+                        <div className='userflowHead flex text-yellow-100 text-[6vw] lg:text-[5vw] mt-[2vw] mb-[5vw] lg:mb-[2vw]'>
                                 <div className='userflow mr-[5vw] lg:mr-[4vw]'>U</div>
                                 <div className='userflow mr-[5vw] lg:mr-[4vw]'>S</div>
                                 <div className='userflow mr-[5vw] lg:mr-[4vw]'>E</div>
@@ -3108,7 +3108,7 @@ const FullProject1 = () => {
                             </div>
 
                             <Link to="/StyleGuide">
-                                <div className='mr-[1.5vw] view text-[3.5vw] lg:text-[2.5vw] text-stone-200 uppercase underline text-center'>VIEW</div>
+                                <div className='mr-[1.5vw] view text-[5vw] lg:text-[2.5vw] text-stone-200 uppercase underline text-center'>VIEW</div>
                             </Link>
                         </div>
                         

@@ -253,7 +253,7 @@ iframe{
 }
 
 .desig{
-    transform: translate(0, 30vw); 
+    transform: translate(0, 40vw); 
 }
 
 .designNote{
@@ -311,8 +311,8 @@ iframe{
 
 .assumption{
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
-    transform: translate(0, 10vw);
+    font-weight: 500;
+    transform: translate(0, 18vw);
 }
 
 .ass1 li{
@@ -325,8 +325,8 @@ iframe{
 
 .survey{
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
-    transform: translate(0, 10vw);
+    font-weight: 500;
+    transform: translate(0, 18vw);
 }
 
 .survey1 li{
