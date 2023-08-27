@@ -1052,7 +1052,7 @@ const FullProject1 = () => {
 
     }, [])
 
-// write a loader function that displays a loader until the iframe video elements loads the video?
+
     
 
 
@@ -2065,61 +2065,68 @@ const FullProject1 = () => {
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                writing about the latest fashion trends and   
+                                                writing about the latest fashion trends   
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                showcasing her personal style. she shops 
+                                                and showcasing her personal style. she  
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                online frequently and is always on the 
+                                                shops online frequently and is always on  
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                lookout for unique and stylish clothing that   
+                                                the lookout for unique and stylish    
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                can help her stand out on social media. She 
+                                                clothing that can help her stand out 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                values a website that offers a wide range of   
+                                                on social media. She values a website 
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                fashion items and is easy to navigate. She    
+                                                that offers a wide range of fashion items     
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                also appreciates a website that offers a 
+                                                and is easy to navigate. She also 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
                                                 
-                                                wide range of outfits where all her needs 
+                                                appreciates a website that offers a wide 
+                                                
+                                                <div className='flex justify-center'>
+                                                    <div className='linee h-[0.2vw] w-full'></div>
+                                                </div>
+                                                
+                                                
+                                                range of outfits where all her needs can
 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
                                                 </div>
 
-                                                can be met. A website that has a strong 
+                                                be met. A website that has a strong 
                                                 
                                                 <div className='flex justify-center'>
                                                     <div className='linee h-[0.2vw] w-full'></div>
@@ -2157,13 +2164,13 @@ const FullProject1 = () => {
                                                         <ul className='sarah1 list-disc text-[4vw] lg:[display:none]'>
                                                             {/* <li>Get a personalized shopping experience that caters to her individual needs.</li> */}
                                                             <li>
-                                                                Find stylish clothing that is appropriate for 
+                                                                Find stylish clothing that is appropriate 
 
                                                             <div className='flex justify-center'>
                                                                 <div className='linee h-[0.2vw] w-full'></div>
                                                             </div>
 
-                                                                her body type.
+                                                                for her body type.
                                                             </li>
 
                                                             <div className='flex justify-center'>
@@ -2171,7 +2178,15 @@ const FullProject1 = () => {
                                                             </div>
 
                                                             <li>
-                                                                Use a website that is easy to navigate and has a fast checkout process.
+                                                                Use a website that is easy to navigate 
+                                                                
+                                                                
+                                                            <div className='flex justify-center'>
+                                                                <div className='linee h-[0.2vw] w-full'></div>
+                                                            </div>
+                                                                
+                                                                
+                                                                and has a fast checkout process.
                                                             </li>
                                                         </ul>
                                                     </div>
