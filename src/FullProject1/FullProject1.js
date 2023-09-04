@@ -3014,9 +3014,9 @@ const FullProject1 = () => {
 
 
                         <div className='skt flex justify-end mt-[4vw] lg:mt-[2vw]'>
-                            <Link to="/Sketches">
+                            <a href="/Sketches">
                                 <div className='viewSketch text-[3vw] lg:text-[2vw] text-stone-200 uppercase underline'>View Sketches</div>
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
@@ -3124,9 +3124,9 @@ const FullProject1 = () => {
                                 </div>
                             </div>
 
-                            <Link to="/StyleGuide">
+                            <a href="/StyleGuide">
                                 <div className='mr-[1.5vw] view text-[5vw] lg:text-[2.5vw] text-stone-200 uppercase underline text-center'>VIEW</div>
-                            </Link>
+                            </a>
                         </div>
                         
 
