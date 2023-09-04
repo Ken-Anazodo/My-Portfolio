@@ -35,6 +35,8 @@ export default function Section1() {
 //    For Text Effect in Frontend Section 
     useEffect(() => {
 
+        let ctx = gsap.context(() => {
+
         // Frontend Dev Section
         const el2 = artDirRef.current;
         const el = provideSupportRef.current;
@@ -44,6 +46,39 @@ export default function Section1() {
         const el6 = scroll.current;
         const el7 = front.current;
         // const frontDev = el7.getElementsByClassName("dev");    
+
+
+        // For Logo Section
+        const el9 = brand.current;
+
+        // For About Section
+    
+       const el10 = evolve.current;
+       const el11 = letsKeepSection.current;
+       const el16 = language.current;
+       const el17 = aboutParentSec.current;
+       const el18 = aboutChild3.current;
+       const elcityReveal = cityReveal.current;
+       const el19 = cityImgRef.current;
+       const elfo = fo.current;
+       const el20 = aic.current;
+
+        // About Children
+        const aboutFirstChild = el17.children[0];
+        const aboutSecondChild = aboutFirstChild.nextSibling;
+        const aboutThirdChild = aboutSecondChild.nextSibling;
+        const aboutFourthChild = aboutThirdChild.nextSibling;
+        const aboutFifthChild = aboutFourthChild.nextSibling;
+
+        // Defining Language Children 
+        const langFirst = el16.children[0];
+        const langSecond = langFirst.nextSibling;
+        const langThird = langSecond.nextSibling;
+        const langFourth = langThird.nextSibling;
+
+        // BLACK CITY VIEW CHILDREN
+        const aicArt = el20.children[0];
+        const aicNo1 = el20.children[1];
       
 
         
@@ -83,16 +118,9 @@ export default function Section1() {
             }}, "1.6")
             
            
-    }, [])
+    
 
-
-
-    // For Logo Section
-    useEffect(() => {
-        const el9 = brand.current;
-        
-
-        
+        // For Logo Section
             gsap.fromTo(el9, {x: '-80vw'}, {x: 0, rotation: 360, duration: 2, transition: 0.2, 
                 scrollTrigger:{
                     trigger: el9,
@@ -101,36 +129,7 @@ export default function Section1() {
                 }
             }, "0.5")
             
-    }, [])
-
-    // For About Section
-    useEffect(() => {
-       const el10 = evolve.current;
-       const el11 = letsKeepSection.current;
-       const el16 = language.current;
-       const el17 = aboutParentSec.current;
-       const el18 = aboutChild3.current;
-       const elcityReveal = cityReveal.current;
-       const el19 = cityImgRef.current;
-       const elfo = fo.current;
-       const el20 = aic.current;
-
-        // About Children
-        const aboutFirstChild = el17.children[0];
-        const aboutSecondChild = aboutFirstChild.nextSibling;
-        const aboutThirdChild = aboutSecondChild.nextSibling;
-        const aboutFourthChild = aboutThirdChild.nextSibling;
-        const aboutFifthChild = aboutFourthChild.nextSibling;
-
-        // Defining Language Children 
-        const langFirst = el16.children[0];
-        const langSecond = langFirst.nextSibling;
-        const langThird = langSecond.nextSibling;
-        const langFourth = langThird.nextSibling;
-
-        // BLACK CITY VIEW CHILDREN
-        const aicArt = el20.children[0];
-        const aicNo1 = el20.children[1];
+    
        
         // Language Children
         gsap.fromTo(langFirst, {x: '-1vw'}, {x: 0, ease: "none", 
@@ -262,6 +261,10 @@ export default function Section1() {
                 scrollTrigger:{
                 trigger: aboutFifthChild
                 }},"0.2" )
+
+            })
+
+            return () => ctx.revert();
 
     }, [])
 

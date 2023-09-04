@@ -3,19 +3,16 @@ import './BlackIntro.css';
 
 import gsap from 'gsap';
 import {useEffect} from 'react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 
 const BlackIntro = () => {
 
   useEffect(() => {
     
-    gsap.fromTo('.introo', {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.7, ease: 'power2.easeIn', transition: 0.15, 
-    scrollTrigger: {
-    trigger: '.introo',
-    } }, '0.2')
+    gsap.fromTo('.introo', {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.7, ease: 'power2.easeIn', transition: 0.15, }, '0.2')
 
   }, [])
   

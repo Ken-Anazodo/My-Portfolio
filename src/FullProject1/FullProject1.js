@@ -79,6 +79,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const FullProject1 = () => {
 
+    const fullProject1 = useRef(null);
     const intro = useRef(null);
     const myNo = useRef(null);
     const projectDate = useRef(null);
@@ -118,6 +119,9 @@ const FullProject1 = () => {
     const macReveal = useRef(null);
 
     useEffect(() => {
+
+    let ctx = gsap.context(() =>{
+
       const clanIntroRed = intro.current;
       const clanIntroChildRed = clanIntroRed.children[0];
 
@@ -1043,14 +1047,12 @@ const FullProject1 = () => {
     start: "10px 90%"
     } }, '0.2')
 
-    // gsap.fromTo('.ttwothreee', {opacity: 0}, {duration: 1, opacity: 1, delay: 1.5, ease: 'power2.easeIn', transition: 1, 
-    // scrollTrigger: {
-    // trigger: '.ttwothreee',
-    // } }, '0.2')
+}, fullProject1);
 
+    return () => ctx.revert
 
-
-    }, [])
+   
+    }, []);
 
 
     
@@ -1058,7 +1060,7 @@ const FullProject1 = () => {
 
 
   return (
-    <div className='relative bg-black'>
+    <div className='relative bg-black' ref={fullProject1}>
         <div className='w-screen h-[100vh] translate-x-0 translate-y-ful absolute top-0 z-50' ref={intro}>
                       <div className='w-screen h-[100vh]  translate-x-0 translate-y-ful absolute top-0'>
                          <ClanChief/>

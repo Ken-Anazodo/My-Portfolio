@@ -70,7 +70,6 @@ const Home = () => {
       <div>
 
       <div>
-      {/* <div className='fixed bg-red-900 text-black'>GET IN TOUCH</div> */}
         <div ref={panels}>
 
             <div className='panel bg-black'>

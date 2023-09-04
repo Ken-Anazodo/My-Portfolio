@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project1.css';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 import gsap from 'gsap';
 import {useRef, useEffect} from 'react'
@@ -15,11 +15,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Project1 = () => {
-
+  const project1 = useRef(null);
   const frontModelReveal = useRef(null);
   const homeMockUpReveal = useRef(null);
   
   useEffect(() => {
+  
+  let ctx = gsap.context(() => {
+
     const elfrontModelReveal = frontModelReveal.current;
     const elhomeMockUpReveal = homeMockUpReveal.current;
 
@@ -145,12 +148,15 @@ const Project1 = () => {
   start: "10px 80%"
   } }, '0.2')
 
+}, project1);
 
+  return () => ctx.revert;
+  
   }, [])
   
   
   return (
-    <div className='lg:w-screen bg-zinc-900 lg:px-[2vw] text-stone-200'>
+    <div className='lg:w-screen bg-zinc-900 lg:px-[2vw] text-stone-200' ref={project1}>
         <div className='bg-black pb-[10vw] lg:pb-[6vw] pt-[5vw] lg:pt-[0vw]'>
             
 
@@ -337,7 +343,7 @@ const Project1 = () => {
               </div>
              
 
-              <Link to="/FullProject1">
+              <a href="/FullProject1">
                   <div className='ml-[2vw] flex justify-center items-center mt-[5vw]'>
                     <div className='lm'>
                         <div className='lm1 text-yellow-600  hover:text-neutral-700'>
@@ -347,7 +353,7 @@ const Project1 = () => {
                     </div>
                     <div className='animate-ping'><img className='w-[2.5vw] lg:w-[2vw] h-[2.5vw] lg:h-[2vw]' src= {arr3} alt= "arrow"></img></div>
                   </div>
-              </Link>
+              </a>
             </section>
         </div>
     </div>

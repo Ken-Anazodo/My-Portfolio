@@ -2,7 +2,7 @@ import React from 'react'
 import './IntroContinue.css';
 
 import gsap from 'gsap';
-import {useEffect} from 'react'
+import {useRef, useEffect} from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // import titleDP from "./img/titleDP.jpg";
@@ -11,8 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const IntroContinue = () => {
 
+	const introContinue= useRef(null);  
+
 	useEffect(() => {
 
+		let ctx = gsap.context(() => {
 		// aesthetics and stick effects
 		gsap.fromTo('.st1', {opacity: 0, x: 0}, {duration: 3, opacity: 1, x: '-45vw', delay:0.2, ease: 'power2.easeIn', 
 		scrollTrigger: {
@@ -126,12 +129,15 @@ const IntroContinue = () => {
 		 toggleActions: 'play reverse play none'
 		} }, '0.2')
 
+	}, introContinue)
+
+		return () => ctx.revert();
 
 	}, [])
 
 
   return (
-	<div>
+	<div ref={introContinue}>
 		<section className='ssec h-screen w-screen px-[3vw] lg:px-[15vw] bg-black py-[5vw]'>
 			<div className='h-[80vh] w-full relative overflow-hidden'>
 				<div className='h-full w-full'>

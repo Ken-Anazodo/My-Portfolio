@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import './GetInTouch.css';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {useState, useEffect} from 'react';
 import cee from "./img/cee.PNG";
+gsap.registerPlugin(ScrollTrigger);
 
 
 const GetInTouch = () => {
@@ -61,7 +63,7 @@ const GetInTouch = () => {
             }}, "0.5")
             
 
-
+           
 
     }, [])
     
@@ -167,7 +169,7 @@ const GetInTouch = () => {
                                     <div className='arrow2 left'></div>
                                 </div>
                             
-                                <Link to= "/">
+                                <a href= "/">
                                     <button onMouseOver={() => {setonHover(true)}}>
                                     <div className='backToHomePage'>
                                     <div className='h-[12.5vw] w-[12.5vw] rounded-full border-stone-400 border-[0.38vw] bg-transparent'>
@@ -182,7 +184,7 @@ const GetInTouch = () => {
                                 </div>
                                 </div>
                                 </button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -194,7 +196,7 @@ const GetInTouch = () => {
                                 <div className='arrow1 left'></div>
                             </div>
 
-                    <Link to= "/">
+                    <a href= "/">
                         <div className='flex justify-center mt-[15vh] px-3'>
                             <button onMouseOver={() => {setonHover(true)}} className="">
                             <div className='backToHomePage'>
@@ -211,7 +213,7 @@ const GetInTouch = () => {
                         </div>
                         </button>
                         </div>
-                        </Link>
+                        </a>
 
                         <div className={`hoverArrow-MobBreakPoint ${onHover? "arrow-active" : ""} animate-ping mt-[13vh]`}>
                                 <div className='arrow1 right'></div>
