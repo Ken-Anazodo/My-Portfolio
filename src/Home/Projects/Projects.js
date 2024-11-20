@@ -23,7 +23,7 @@ const Projects = () => {
 
   return (
     <div>
-        <div className='flex workBg items-center justify-center w-screen h-[70vh] md:h-screen bg-zinc-900 pb-7vw '>
+        <div className='flex workBg items-center justify-center w-screen h-[50vh] sm:h-[70vh] md:h-[20vh] md:mt-[25vw] bg-zinc-900 pb-7vw '>
           <div className='projects text-[15vw]'>
               <div className='work text-stone-400'>WORKS</div>
           </div>

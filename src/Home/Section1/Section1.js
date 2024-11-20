@@ -192,22 +192,22 @@ export default function Section1() {
         let tl1 = gsap.timeline()
 
                 // Language Section
-                tl1.fromTo(langFirst, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easIn", scrollTrigger:{
+                tl1.fromTo(langFirst, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easeIn", scrollTrigger:{
                         trigger: el16,
                         toggleActions: 'play reverse play reset'
                 }}, "0.2")
 
-                    .fromTo(langSecond, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easIn", scrollTrigger:{
+                    .fromTo(langSecond, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easeIn", scrollTrigger:{
                     trigger: langSecond,
                     toggleActions: 'play reverse play reset'
                     }}, "0.2")
 
-                    .fromTo(langThird, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easIn", scrollTrigger:{
+                    .fromTo(langThird, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easeIn", scrollTrigger:{
                         trigger: langThird,
                         toggleActions: 'play reverse play reset'
                     }}, "0.2")
 
-                    .fromTo(langFourth, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easIn", scrollTrigger:{
+                    .fromTo(langFourth, {opacity: 0, y: '6vw'}, {opacity: 1, y: 0, transition: 0.5, duration: 0.5, ease: "power3.easeIn", scrollTrigger:{
                         trigger: langFourth,
                         toggleActions: 'play reverse play reset'
                     }}, "0.2")

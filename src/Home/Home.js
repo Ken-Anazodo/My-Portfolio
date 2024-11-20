@@ -15,6 +15,7 @@ import Footer from './Footer/Footer';
 import BlackIntro from './BlackIntro/BlackIntro';
 import Projects from './Projects/Projects';
 import Project1 from './Project1/Project1';
+import Project2 from './Project2/Project2';
 import Barcode from './Barcode/Barcode';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,6 +102,7 @@ const Home = () => {
             <Section1/>
             <Section2/>
             <Projects/>
+            <Project2/>
             <Project1/>
             <Section3/>
             <Section4/>

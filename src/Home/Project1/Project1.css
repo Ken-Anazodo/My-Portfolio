@@ -84,7 +84,8 @@
 }
 
 .lcBody{
-    font-family: 'Poppins', sans-serif; 
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: "FK Grotesk Variable"; 
 }
 
 .caseStudy{

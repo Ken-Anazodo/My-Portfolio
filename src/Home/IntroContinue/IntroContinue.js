@@ -157,9 +157,9 @@ const IntroContinue = () => {
 				</div>
 				
 					<div className='h-full w-full flex justify-center items-center absolute top-[0vw] left-[0vw] overflow-hidden'>
-						<div className='redBar b1 h-[35vw] lg:h-[15vw] w-[3.5vw] lg:w-[1.5vw]'></div>
+						<div className='redBar b1 h-[35vw] sm:h-[28vw] lg:h-[15vw] w-[3.5vw] sm:w-[2.5vw] lg:w-[1.5vw] sm:mt-[8vw] md:mt-0'></div>
 						<div className='pl-[7vw] lg:pl-[5vw]'>
-							<div className='redBar b2 mb-[20vw] lg:mb-[9vw] h-[3vw] lg:h-[1vw] w-[8vw] lg:w-[4vw]'></div>
+							<div className='redBar b2 mb-[20vw] sm:mb-[11vw] lg:mb-[9vw] h-[3vw] sm:h-[2vw] lg:h-[1vw] w-[8vw] lg:w-[4vw]'></div>
 						</div>
 					</div>
 
@@ -171,14 +171,14 @@ const IntroContinue = () => {
 							<div>
 								<div className='text-center flex justify-center items-center md:flex-col md:justify-start md:items-start lg:flex-row lg:items-center'>
 									<div className='lett'>
-										<div className='lett1 text-[14vw] md:text-[10vw] lg:text-[6vw] mr-[6vw] lg:mr-[3.5vw] md:h-[13vw]'>LET'S</div>
+										<div className='lett1 text-[14vw] sm:text-[8vw] md:text-[10vw] lg:text-[6vw] mr-[6vw] lg:mr-[3.5vw] md:h-[13vw]'>LET'S</div>
 									</div>
 									
-									<ul className='begg text-[6.5vw] md:text-[5vw] lg:text-[3vw] lg:mb-[4vw] flex'>
-										<li className='begg1 mr-[5.3vw] md:mr-[4.5vw] lg:mr-[3vw]'>B</li>
-										<li className='begg1 mr-[5.3vw] md:mr-[4.5vw] lg:mr-[3vw]'>E</li>
-										<li className='begg1 mr-[5.3vw] md:mr-[4.5vw] lg:mr-[3vw]'>G</li>
-										<li className='begg1 mr-[5.3vw] md:mr-[4.5vw] lg:mr-[3vw]'>I</li>
+									<ul className='begg text-[6.5vw] sm:text-[2.9vw] md:text-[5vw] lg:text-[3vw] lg:mb-[4vw] flex'>
+										<li className='begg1 mr-[5.3vw] sm:mr-[4vw] md:mr-[4.5vw] lg:mr-[3vw]'>B</li>
+										<li className='begg1 mr-[5.3vw] sm:mr-[4vw] md:mr-[4.5vw] lg:mr-[3vw]'>E</li>
+										<li className='begg1 mr-[5.3vw] sm:mr-[4vw] md:mr-[4.5vw] lg:mr-[3vw]'>G</li>
+										<li className='begg1 mr-[5.3vw] sm:mr-[4vw] md:mr-[4.5vw] lg:mr-[3vw]'>I</li>
 										<li className='begg1'>N</li>
 									</ul>
 								</div>
@@ -192,7 +192,7 @@ const IntroContinue = () => {
 
 
 					<div className='h-full w-full flex justify-center items-end absolute top-0 left-0'>
-						<div className='allEx flex justify-center items-center text-zinc-950 text-[2.8vw] md:text-[1.9vw] lg:text-[1.1vw] mb-[40vw] md:mb-[20vw] lg:mb-[2vw] z-20'>
+						<div className='allEx flex justify-center items-center text-zinc-950 text-[2.8vw] sm:text-[2vw] md:text-[1.9vw] lg:text-[1.1vw] mb-[40vw] sm:mb-[5vw] md:mb-[20vw] lg:mb-[2vw] z-20'>
 							<div>ALL NEW EXCLUSIVE</div>
 						</div>
 
@@ -205,15 +205,15 @@ const IntroContinue = () => {
 						<div className='redBar b4 h-[2vw] w-[27vw]'></div>
 					</div>
 
-					<div className='absolute left-[0vw] bottom-[0vw] h-full w-full flex justify-center items-center theIntrod text-yellow-100 text-[4vw] lg:text-[1.5vw] lg:[display:none'>
+					<div className='absolute left-[0vw] bottom-[0vw] h-full w-full flex justify-center items-center theIntrod text-yellow-100 text-[4vw]  sm:text-[3vw] lg:text-[1.5vw] lg:[display:none'>
 						<div>
-							<div className='chns ml-[12.7vw] lg:ml-[9.7vw] mb-[5vw] lg:mb-0'>
+							<div className='chns ml-[12.7vw] sm:ml-[9vw] lg:ml-[9.7vw] mb-[5vw] sm:mb-[2vw] lg:mb-0'>
 								<div>查</div>
 								<div>看</div>
 							</div>
-							<div className='mb-[15vw] lg:mb-[6vw] ml-[3vw]'>
-								<div className='introd1 mb-[1vw] text-[4vw] lg:text-[1.8vw]'>the</div>
-								<div className='introd2 ml-[2vw] text-[4.5vw] lg:text-[3vw]'>INTRODUCTION</div>
+							<div className='mb-[15vw] sm:mb-[3vw] lg:mb-[6vw] ml-[3vw]'>
+								<div className='introd1 mb-[1vw] text-[4vw] sm:text-[3vw] lg:text-[1.8vw]'>the</div>
+								<div className='introd2 ml-[2vw] text-[4.5vw] sm:text-[3.5vw] lg:text-[3vw]'>INTRODUCTION</div>
 							</div>
 						</div>
 					</div>
