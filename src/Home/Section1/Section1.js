@@ -285,17 +285,19 @@ export default function Section1() {
                 <div className='fed fed1 flex tracking-tighter flex-wrap pt-[1.4vw] lg:pt-[0.6vw] 2xl:pt-[0.2vw] sm:text-[13vw] text-[85px]'>
                     <span className='fed fed1 flex flex-wrap'>
                         <h1 className='dev hover:text-stone-400'>F</h1>
-                        <h1 className='dev hover:text-stone-400'>R</h1>
-                        <h1 className='dev hover:text-stone-400'>O</h1>
-                        <h1 className='dev hover:text-stone-400'>N</h1>
-                        <h1 className='dev hover:text-stone-400'>T</h1>
+                        <h1 className='dev hover:text-stone-400'>U</h1>
+                        <h1 className='dev hover:text-stone-400'>L</h1>
+                        <h1 className='dev hover:text-stone-400'>L</h1>
+                        {/* <h1 className='dev hover:text-stone-400'>T</h1> */}
                     </span>
 
                     <span className='fed flex flex-wrap'>
                         <div className='dev'>-</div>
-                        <h1 className='dev hover:text-stone-400'>E</h1>
-                        <h1 className='dev hover:text-stone-400'>N</h1>
-                        <h1 className='dev hover:text-stone-400'>D</h1>
+                        <h1 className='dev hover:text-stone-400'>S</h1>
+                        <h1 className='dev text-stone-400 hover:text-stone-200'>T</h1>
+                        <h1 className='dev hover:text-stone-400'>A</h1>
+                        <h1 className='dev hover:text-stone-400'>C</h1>
+                        <h1 className='dev hover:text-stone-400'>K</h1>
                     </span>
                 </div> 
                 {/* <div className='scrl [display:none] sm:[display:flex] sm:text-xs sm:h-[48px] md:h-16 2xl:h-[90px] md:text-base 2xl:text-[22px] text-black p-1 scroll bg-zinc-700 tracking-tighter' ref={scroll}>SCROLL</div> */}
