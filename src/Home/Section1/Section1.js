@@ -396,7 +396,7 @@ export default function Section1() {
                 {/* 3rd child */}
             <div className='aboutChildSec appFont font-light md:font-bold xl:[display:none] duplabout2 text-stone-400 mt-6 xl:mt-52 max-w-sm mb-6 xl:mb-60'>
                 <h1 className='font-extrabold xl:text-[1.4vw]'>INTEREST</h1>
-                <div>Art Direction, Creative Development, Concept Design and Brand Strategy</div>
+                <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
             </div>
 
                 {/* 4th Child */}
