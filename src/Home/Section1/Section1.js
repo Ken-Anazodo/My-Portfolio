@@ -479,7 +479,7 @@ export default function Section1() {
 
                 <div className='appFont [display:none] xl:[display:block] xl:text-[1.25vw] font-bold about2 text-stone-400 mt-[5vw] ml-[2.5vw]' ref={aboutChild3}>
                     <h1 className='interest font-extrabold xl:text-[1.4vw]'>INTEREST</h1>
-                    <div>Art Direction, Creative Development, Concept Design and Brand Strategy</div>
+                    <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
                 </div>
 
                 
