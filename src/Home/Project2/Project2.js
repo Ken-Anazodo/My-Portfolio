@@ -58,7 +58,7 @@ const Project2 = () => {
 
 					<div class="proj-container">
 						<div className='zeroOnee mt-[3vw] text-[8vw] xl:text-[4vw] text-stone-600'> 02</div>
-						<a className='link' href='http://hbstudios.pythonanywhere.com' aria-label='zodo terminal' target="_blank" rel="noopener noreferrer">
+						<a className='link' href='https://hbstudios.vercel.app' aria-label='zodo terminal' target="_blank" rel="noopener noreferrer">
 							<div className="proj proj4">
 								<img className='w-full h-full object-cover' src={img2} alt= "Hb Studios"></img>
 							</div>
