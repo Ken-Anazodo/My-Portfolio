@@ -69,6 +69,7 @@ export default function Section1() {
         const aboutThirdChild = aboutSecondChild.nextSibling;
         const aboutFourthChild = aboutThirdChild.nextSibling;
         const aboutFifthChild = aboutFourthChild.nextSibling;
+        const aboutSixthChild = aboutFifthChild.nextSibling;
 
         // Defining Language Children 
         const langFirst = el16.children[0];
@@ -262,6 +263,11 @@ export default function Section1() {
                 trigger: aboutFifthChild
                 }},"0.2" )
 
+                .fromTo(aboutSixthChild, {opacity:0, y: '5vw'}, {opacity:1, y: 0, ease: "power3.easeOut", transition: 1, duration: 1, 
+                scrollTrigger:{
+                trigger: aboutSixthChild
+                }},"0.2" )
+
             })
 
             return () => ctx.revert();
@@ -382,9 +388,9 @@ export default function Section1() {
             <div className='aboutChildSec appFont font-light md:font-bold text-stone-400 mt-[3.3vw]'>
                <h1 className='about font-extrabold xl:text-[1.4vw]'>ABOUT</h1> 
                <p>
-                 I am a developer based in Lagos, Nigeria with a degree in Computer Technology, 
-                focused on creating interactive digital experiences 
-                on the web. I design, develop and deliver web applications that drives result.
+               I am a Lagos-based developer with a degree in Computer Technology, specializing in crafting 
+               interactive web experiences and building fully functional, scalable backend solutions I 
+               develop and deliver web applications that drives result.
                 </p>
             </div>
 
@@ -397,28 +403,35 @@ export default function Section1() {
             <div className='aboutChildSec appFont font-light md:font-bold xl:[display:none] duplabout2 text-stone-400 mt-6 xl:mt-52 max-w-sm mb-6 xl:mb-60'>
                 <h1 className='font-extrabold xl:text-[1.4vw]'>INTEREST</h1>
                 <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
+
+                <h1 className='interest font-extrabold xl:text-[1.4vw] mt-[4vw]'>SKILLS</h1>
+                <div>Python, Flask, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap, GSAP</div>
             </div>
 
                 {/* 4th Child */}
-            <div className='aboutChildSec appFont font-light md:font-bold text-stone-400 mt-[2vw] mb-7 md:mb-7 lg:mb-[2vw] text-justify md:text-left'>
-                <p>I'm curious, passionate, and strive for continuous evolution. 
-                    I gain inspiration through the very art of innovation.
-                Creativity has become my lifestyle and I believe expression of ideas through art and designs tells a story at a 
-                deeper level without words being uttered.
-                I thrive in creating identities that expresses ones true 
-                personality by branding their experience and lifestyle.
-                Currently, I'm a Frontend Developer and Designer and to this day I push to build 
-                    as far as our imaginations can carry, play around with new shapes 
-                and techniques to find solutions that are appealing and efficient.</p>
+            <div className='aboutChildSec appFont font-light md:font-bold text-stone-400 mt-[2vw] mb-7 md:mb-7 lg:mb-[2vw] sm:text-justify md:text-left'>
+                <p> 
+                I take pride in developing applications 
+                that not only provide effective solutions but also address real-world challenges. 
+                With a passion for problem-solving, I strive to create seamless, user-centric experiences 
+                that empower individuals and businesses alike. My dedication to leveraging technology as a
+                 tool for positive impact fuels my drive to innovate and deliver results that matter.
+                </p>
             </div>
 
                 {/* 5th Child */}
             <div className='aboutChildSec appFont text-stone-400 mb-20 font-light md:font-bold lg:mb-[4vw]'>
                 <p>
-                    I love to explore possibities, strive to know more and everly open minded to constant improvement. 
-                    I enjoy working with people that love aesthetics, like minded individuals that evolve with the times,
-                    and truly believe the right experience can change it all.
+                I embrace continuous improvement with an open mind and a commitment to growth. 
+                I thrive in collaborating with like-minded individuals who adapt and evolve with the times, 
+                driven by the belief that the right experiences have the power to make a transformative impact.
                 </p>
+            </div>
+
+                 {/* 6th Child */}
+            <div className='aboutChildSec appFont [display:none] xl:[display:block] xl:text-[1.25vw] font-bold about2 text-stone-400'>
+                <h1 className='interest font-extrabold xl:text-[1.4vw]'>SKILLS</h1>
+                <div>Python, Flask, SQL, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP.</div>
             </div>
         </div>
 
