@@ -73,7 +73,7 @@ const Project2 = () => {
 							</div>
 							
 							<div class="proj-descr">
-								<p>Portfolio Website</p>
+								<p>Portfolio Web Application</p>
 							</div>
 						</div>
 					</div>
