@@ -402,10 +402,10 @@ export default function Section1() {
                 {/* 3rd child */}
             <div className='aboutChildSec appFont font-light md:font-bold xl:[display:none] duplabout2 text-stone-400 mt-6 xl:mt-52 max-w-sm mb-6 xl:mb-60'>
                 <h1 className='font-extrabold xl:text-[1.4vw]'>INTEREST</h1>
-                <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
+                <div>Art Direction, Creative Development, Concept Design, E-commerce, Brand Strategy & Web3</div>
 
                 <h1 className='interest font-extrabold xl:text-[1.4vw] mt-[4vw]'>SKILLS</h1>
-                <div>Python, Flask, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP.</div>
+                <div>Python, Flask, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP</div>
             </div>
 
                 {/* 4th Child */}
@@ -431,7 +431,7 @@ export default function Section1() {
                  {/* 6th Child */}
             <div className='aboutChildSec appFont [display:none] xl:[display:block] xl:text-[1.25vw] font-bold about2 text-stone-400'>
                 <h1 className='interest font-extrabold xl:text-[1.4vw]'>SKILLS</h1>
-                <div>Python, Flask, SQL, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP.</div>
+                <div>Python, Flask, SQL, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP</div>
             </div>
         </div>
 
@@ -492,7 +492,7 @@ export default function Section1() {
 
                 <div className='appFont [display:none] xl:[display:block] xl:text-[1.25vw] font-bold about2 text-stone-400 mt-[5vw] ml-[2.5vw]' ref={aboutChild3}>
                     <h1 className='interest font-extrabold xl:text-[1.4vw]'>INTEREST</h1>
-                    <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
+                    <div>Art Direction, Creative Development, Concept Design, E-commerce, Brand Strategy & Web3</div>
                 </div>
 
                 
