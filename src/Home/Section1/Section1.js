@@ -405,7 +405,7 @@ export default function Section1() {
                 <div>Art Direction, Creative Development, Concept Design, Brand Strategy & Web3</div>
 
                 <h1 className='interest font-extrabold xl:text-[1.4vw] mt-[4vw]'>SKILLS</h1>
-                <div>Python, Flask, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap, GSAP</div>
+                <div>Python, Flask, SQLAlchemy ORM, Javascript React Js, Node Js, Jquery, Rest Api, Tailwind CSS, Bootstrap & GSAP.</div>
             </div>
 
                 {/* 4th Child */}
